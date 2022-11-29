@@ -1,0 +1,99 @@
+/** @format */
+
+.nav {
+  height: 150px;
+  background-color: rgb(1, 112, 220);
+  margin-bottom: 20px;
+}
+#filters {
+  display: flex;
+  padding: 16px;
+  height: 40px;
+  border-top: solid rgb(227, 228, 229);
+  border-bottom: solid rgb(227, 228, 229);
+}
+.A {
+  height: 30px;
+
+  display: flex;
+  align-self: center;
+  background-color: rgb(241, 241, 242);
+  margin: 10px;
+  padding: 0px 20px 0px 20px;
+  border-radius: 20px;
+}
+#empty {
+  align-self: center;
+  width: 40%;
+}
+.A > div {
+  /* border: solid black; */
+  align-self: center;
+}
+span {
+  margin: 5px 5px -15px 5px;
+}
+select {
+  background-color: rgb(241, 241, 242);
+  border: none;
+}
+#body {
+  display: grid;
+  padding: 30px;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  justify-items: center;
+  /* text-align: center; */
+  gap: 10px;
+}
+.kl {
+  padding-top: 10px;
+  background-color: rgb(1, 112, 220);
+  width: 60px;
+  height: 30px;
+  border-radius: 20px;
+  text-align: center;
+}
+img {
+  width: 80%;
+  height: 100%;
+}
+p {
+  margin: 0px;
+}
+.olp {
+  padding: 10px;
+  /* border: solid black; */
+}
+.star {
+  display: flex;
+  /* padding: 10px; */
+  /* width: 100%; */
+  align-self: center;
+  align-items: center;
+  /* height: 50px; */
+  /* border: solid black; */
+}
+.img2 {
+  width: 20%;
+  height: 40%;
+}
+.kol {
+  /* border: solid black; */
+  text-align: center;
+}
+.name {
+  padding: 5px;
+  height: 40px;
+  /* border: solid black; */
+}
+.price {
+  display: flex;
+}
+h3 {
+  margin-right: 10px;
+}
+h4 {
+  color: rgb(151, 152, 156);
+  text-decoration: line-through;
+}
