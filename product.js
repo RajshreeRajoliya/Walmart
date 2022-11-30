@@ -44,18 +44,17 @@ function display(data) {
         if (flag == false) {
           local.push(ele);
         }
-        // local.push(ele);
-        // if (ele.count != 0) {
         localStorage.setItem('product_added', JSON.stringify(local));
-        // }
-        if (ele.count == 0) {
-          localStorage.clear();
-        }
 
         addfun();
       }
       // console.log('adx');
       if (ele.count == 0) {
+        let local = JSON.parse(localStorage.getItem('product_added')) || [];
+        let r = local.filter(function (o) {
+          return o.count > 0;
+        });
+        localStorage.setItem('product_added', JSON.stringify(r));
         add.innerHTML = '';
 
         add.append(pp);
@@ -87,6 +86,7 @@ function display(data) {
         local.push(ele);
       }
       // local.push(ele);
+
       localStorage.setItem('product_added', JSON.stringify(local));
       add.append(sub, ele.count, plus);
     }
