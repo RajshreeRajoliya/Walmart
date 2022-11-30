@@ -29,34 +29,64 @@ function display(data) {
     plus.addEventListener('click', plu);
     function su() {
       if (ele.count > 0) {
-        ele.count--;
-        add.innerHTML = '';
-        add.append(sub, ele.count, plus);
-        let local = product.filter(function (ele) {
-          return ele.count > 1;
+        let local = JSON.parse(localStorage.getItem('product_added')) || [];
+
+        let flag = false;
+        local.map(function (el) {
+          if (el.idd == ele.idd) {
+            flag = true;
+            ele.count--;
+            el.count--;
+            console.log(el.idd, ele.idd);
+          }
         });
+
+        if (flag == false) {
+          local.push(ele);
+        }
+        // local.push(ele);
+        // if (ele.count != 0) {
         localStorage.setItem('product_added', JSON.stringify(local));
-        console.log(local);
+        // }
+        if (ele.count == 0) {
+          localStorage.clear();
+        }
+
+        addfun();
       }
       // console.log('adx');
       if (ele.count == 0) {
         add.innerHTML = '';
 
         add.append(pp);
-        count++;
+        ele.count++;
 
         // add.append('jkjko');
       }
     }
     function plu() {
-      ele.count++;
-      console.log('saxa');
+      // ele.count++;
+      // console.log('saxa');
       add.innerHTML = '';
-      let local = product.filter(function (ele) {
-        return ele.count > 1;
+      // let local = product.filter(function (ele) {
+      //   return ele.count > 1;
+      // });
+      let local = JSON.parse(localStorage.getItem('product_added')) || [];
+
+      let flag = false;
+      local.map(function (el) {
+        if (el.idd == ele.idd) {
+          flag = true;
+          ele.count++;
+          el.count++;
+          console.log(el.idd, ele.idd);
+        }
       });
 
-      console.log(local);
+      if (flag == false) {
+        local.push(ele);
+      }
+      // local.push(ele);
       localStorage.setItem('product_added', JSON.stringify(local));
       add.append(sub, ele.count, plus);
     }
