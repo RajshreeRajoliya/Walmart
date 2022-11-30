@@ -61,7 +61,8 @@ var display = () => {
         // console.log(elem);
       return acc + (+elem.List_Price * +elem.count);
     },0) 
-    document.getElementById("totalIteminCart1").innerText="$ "+ total.toFixed(2);
+    document.getElementById("totalIteminCart1").innerText="$ "+ total.toFixed(2); 
+    document.getElementById("EstimatedTotal12").innerText="$ "+ total.toFixed(2);
 
     var totalListPrice=cartValue.reduce((acc,elem)=>{
         // console.log(elem);
@@ -92,6 +93,7 @@ var display = () => {
       return acc + (+elem.List_Price * +elem.count);
     },0) 
     document.getElementById("totalIteminCart1").innerText="$ "+ total.toFixed(2);
+    document.getElementById("EstimatedTotal12").innerText="$ "+ total.toFixed(2);
   
     var totalListPrice=cartValue.reduce((acc,elem)=>{
         // console.log(elem);
@@ -119,6 +121,7 @@ var total=cartValue.reduce((acc,elem)=>{
   return acc + (+elem.List_Price * +elem.count);
 },0) 
 document.getElementById("totalIteminCart1").innerText="$ "+ total.toFixed(2);
+document.getElementById("EstimatedTotal12").innerText="$ "+ total.toFixed(2);
 
 
 
