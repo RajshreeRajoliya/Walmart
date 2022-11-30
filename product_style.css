@@ -4,28 +4,42 @@
   height: 150px;
   background-color: rgb(1, 112, 220);
   margin-bottom: 20px;
+  position: fixed;
+  top: 0;
+  /* bottom: 0; */
+  right: 0;
+  width: 100%;
+  z-index: 9999;
+  /* left: 100px; */
+  /* top: 800px; */
 }
 #filters {
   display: flex;
+  flex-wrap: wrap;
   padding: 16px;
-  height: 40px;
+  /* height: 40px; */
+  justify-content: space-between;
   border-top: solid rgb(227, 228, 229);
   border-bottom: solid rgb(227, 228, 229);
+  position: relative;
+  top: 145px;
 }
 .A {
   height: 30px;
 
   display: flex;
   align-self: center;
-  background-color: rgb(241, 241, 242);
+  background-color: rgb(227, 228, 229);
   margin: 10px;
   padding: 0px 20px 0px 20px;
   border-radius: 20px;
 }
 #empty {
   align-self: center;
-  width: 40%;
+  width: 50%;
 }
+
+#ls,
 .A > div {
   /* border: solid black; */
   align-self: center;
@@ -45,11 +59,15 @@ select {
   justify-items: center;
   /* text-align: center; */
   gap: 10px;
+  position: relative;
+  /* z-index: 9999; */
+  position: relative;
+  top: 145px;
 }
 .kl {
   padding-top: 10px;
   background-color: rgb(1, 112, 220);
-  width: 60px;
+  width: 110px;
   height: 30px;
   border-radius: 20px;
   text-align: center;
@@ -96,4 +114,137 @@ h3 {
 h4 {
   color: rgb(151, 152, 156);
   text-decoration: line-through;
+}
+.ol {
+  width: 200px;
+  display: none;
+  /* border: solid black; */
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  position: absolute;
+  left: 240px;
+  top: 220px;
+  z-index: 1;
+  text-align: center;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  /* width: 200px; */
+}
+#oll {
+  width: 200px;
+  display: none;
+  /* border: solid black; */
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  position: absolute;
+  left: 100px;
+  top: 220px;
+  z-index: 1;
+  text-align: center;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+#ohl {
+  width: 200px;
+  display: none;
+  /* border: solid black; */
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  position: absolute;
+  left: 25%;
+  top: 220px;
+  z-index: 1;
+  text-align: center;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+#opl {
+  width: 200px;
+  display: none;
+  /* border: solid black; */
+  background-color: white;
+  padding: 10px;
+  border-radius: 5px;
+  position: absolute;
+  left: 84%;
+  top: 220px;
+  z-index: 1;
+  text-align: center;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+#hidden {
+  display: flex;
+}
+.p1 {
+  padding: 10px;
+  border-radius: 1px;
+  /* border-bottom: solid rgb(227, 228, 229); */
+}
+.p1:hover {
+  background-color: rgb(227, 228, 229);
+}
+#ls {
+  align-self: center;
+}
+button {
+  height: 25px;
+  width: 25px;
+  background-color: rgb(0, 79, 154);
+  border-radius: 50%;
+  color: white;
+  border: none;
+  margin: 0px 10px 0px 10px;
+}
+.pp {
+  color: white;
+}
+@media all and (max-width: 1024px) and (min-width: 768px) {
+  #body {
+    display: grid;
+    padding: 30px;
+    grid-template-columns: repeat(2, 1fr);
+    top: 200px;
+  }
+  #empty {
+    margin-left: 10%;
+    align-self: center;
+    width: 50%;
+  }
+  #filter {
+    justify-self: center;
+    justify-content: center;
+    /* justify-self:  */
+  }
+}
+@media all and (max-width: 400px) and (min-width: 301px) {
+  #body {
+    display: grid;
+    padding: 30px;
+
+    grid-template-columns: repeat(1, 1fr);
+    top: 200px;
+  }
+  #empty {
+    margin-left: 10%;
+
+    align-self: center;
+    width: 50%;
+  }
+  .ol {
+    position: absolute;
+    left: 10px;
+    top: 270px;
+  }
+  #ohl {
+    width: 100px;
+    position: absolute;
+    left: 240px;
+    top: 270px;
+  }
+  #oll {
+    width: 100px;
+    position: absolute;
+    left: 240px;
+    top: 220px;
+  }
 }
