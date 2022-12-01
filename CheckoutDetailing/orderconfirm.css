@@ -1,0 +1,41 @@
+#head{
+color: blue;
+}
+#thanks{
+    height: 100px;
+    width: 100%;
+    /* border: 2px solid red; */
+    background-color: rgb(232, 242, 242);
+    margin-top: 10%;
+}
+.fa-solid{
+color: green;
+margin-left: 3%;
+margin-top: 2%;
+font-size: 50px; 
+}
+#regards{
+    margin-left: 15%;
+}
+
+#token{
+    padding: 30px;
+    /* border: 2px solid red; */
+    margin-left: 500px;
+
+}
+#btndiv{
+    margin-top: 30px;
+    margin-left: 40px;
+}
+#buttonContinue{
+    width: 30%;
+    height: 50px;
+    border-radius: 30px;
+    background-color: #0071dc;
+    border: #0071dc;
+    color: #fff;
+    font-weight: bolder;
+    margin-left: -8%;
+    
+}

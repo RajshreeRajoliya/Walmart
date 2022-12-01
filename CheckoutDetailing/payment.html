@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+
+    <link rel="stylesheet" href="payment.css">
+    <!-- <link rel="stylesheet" href="cart.css"> -->
+</head>
+<body>
+    <div id="heading"> <h1 id="Checkout">Checkout</h1> </div>
+    <div id="mainConatiner1">
+ <div id="mainContainer">
+    <div id="container">
+    <div id="displayItem">
+        <div id="upperhead"> 
+            <div> <img id="truck"
+                src="https://i5.walmartimages.com/dfw/63fd9f59-1b5e/5452ae02-a31f-4ef1-9a45-62ac0b06c13b/v1/mci-shipping.svg" alt=""></div>
+        
+         <div> <h2 id="freeShip">1. Free shipping, arrives by Fri, Dec 25 &nbsp; <span >  <i class="fa-solid fa-circle-check"></i></span>  </h2></div>
+          <br>
+          
+        </div>
+        <div id="nameaddress">
+            <h3>Rajshree Rajoliya</h3>
+            <h3>Golden Gate Bridge, SF,CA 94016</h3>
+          </div>
+       
+        <hr>
+        <div id="generalinst">
+            <h3>Delivery instructions</h3>
+            <h3>Add gate codes or other useful information.</h3>
+          </div>
+       
+        <hr>
+      
+        <div id="itemDetail">
+           <h3 id="item">Items details (<span id="totalItems"></span>items)</h3>
+           <div id="cartDetails">
+            <!-- //====display ghere -->
+           </div> 
+        </div>
+        
+        
+         
+       </div>
+<!-- /////Displaying here/ -->
+
+<div id="payment">
+    <div id="header">
+       <h1 id="paymethod"><span><i class="fa-solid fa-wallet"></i></span>&nbsp; 2. Payment method</h1>
+      
+    </div>
+    <h2 id="headcard">Pay with card</h2>
+     <div id="allcards">
+        <img src="https://i5.walmartimages.com/dfw/63fd9f59-7b6d/d53b5a7a-3eca-4b49-a950-838cb87068b9/v1/wallet-capitalone-plcc@1x.png" alt="">
+        <img src="https://i5.walmartimages.com/dfw/63fd9f59-18df/ed0b73d0-0bbd-44dc-8dcc-b835c7588ece/v1/wallet-visa-dark-logo.png" alt="">
+        <img src="https://i5.walmartimages.com/dfw/63fd9f59-18df/ed0b73d0-0bbd-44dc-8dcc-b835c7588ece/v1/wallet-discover-dark-logo.png" alt="">
+        <img src="https://i5.walmartimages.com/dfw/63fd9f59-18df/ed0b73d0-0bbd-44dc-8dcc-b835c7588ece/v1/wallet-master-dark-logo.png" alt="">
+        <img src="https://i5.walmartimages.com/dfw/4ff9c6c9-213b/k2-_d4c88659-0d50-4007-9562-22aa7e463fcb.v1.svg" alt="">
+        <img src="https://i5.walmartimages.com/dfw/63fd9f59-18df/ed0b73d0-0bbd-44dc-8dcc-b835c7588ece/v1/wallet-sams-master-dark-logo.png" alt="">
+        <img src="https://i5.walmartimages.com/dfw/63fd9f59-154b/e8c1d0bf-a4ad-4b20-8eac-939ab7f93063/v1/Gift-Card-Logo.png" alt="">
+        <img src="https://i5.walmartimages.com/dfw/63fd9f59-2845/2044d79e-92d5-4c08-90a2-0480444a877f/v1/EBT-Logo.svg" alt="">
+        <img src="https://i5.walmartimages.com/dfw/63fd9f59-5677/b30375fd-16ce-44d1-b35f-a8c8bb077cc3/v1/wallet-icn-otc.svg" alt="">
+        <img src="https://i5.walmartimages.com/dfw/63fd9f59-9f9b/becea509-597c-48ad-ae23-fed73475118e/v1/wallet-solutran-logo.svg" alt="">
+     </div>
+        <h3 id="line"> Learn more about payment methods we accept.</h3>
+         <h4 id="forinput">* Required field</h4>
+         <input type="text" id="inputbox" placeholder="Card Number">
+         <button id="btn">Continue</button>
+  </div>
+  <div id="contact">
+   <div id="mobilehead">
+    <h1 id="headingtomobile"><span><i class="fa-solid fa-mobile-screen-button"></i></span>&nbsp;&nbsp; 3. Mobile contact   <span id="MobileConnect" > &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <i class="fa-solid fa-circle-check"></i></span></h1> 
+ </div>
+
+ <h3 id="line">We'll contact you in case anything comes up with your order.</h3>
+ <h4 id="forinput">* Required field</h4>
+ <input type="text" id="inputbox2" placeholder="Phone number (10 digits)*">
+ <h3 id="chktick"> I want to receive text updates about the status of my order.<input type="checkbox" name="" id="chkbox" ></h3>
+
+ <h4 id="messs">Message and data rates may apply. Number and frequency of automated texts may vary based on your order. Consent not required for purchase. By continuing, you agree to our Mobile Alert Terms.</h4>
+  </div>
+  </div>
+<!-- Rajshree -->
+
+<div id="subtotal">
+   <div id="bonus">
+   
+      <div id="btndiv"> <button id="buttonContinue">Continue to checkout</button></div>
+      
+     
+      <div id="saving">
+          <img src="https://i5.walmartimages.com/dfw/4ff9c6c9-69ed/k2-_c5fc89eb-a765-445a-846c-c88b31ebf4f2.v1.png" alt="">    
+     <p>Items in your cart have reduced prices.
+      <br>
+       Check out now for extra savings! <span><i class="fa-solid fa-x"></i></span>  </p>
+       </div>
+  
+       <div id="summaryoftotal">
+     
+          <h3> Subtotal <span id="totalIteminCart1"></span></h3>
+         <h3 >Savings <span id="saving23"></span></h3>
+    
+      <h3>Shipping</h3>
+  
+      <h3>Taxes</h3>
+  
+      <h4>Estimated total <span id="estimatedTotal"></span></h4>
+      <h4 id="affirm" href=""><span>$32/mo with&nbsp;</span><img style="width: 37px; height: 18px;" src="https://cdn-assets.affirm.com/images/black_logo-white_bg.jpg" alt="" srcset=""></h4>
+      <a id="learnHow" href="">Learnhow</a>
+      </div>
+      </div>
+      </div>
+  
+</div>
+<!-- ========================================================== -->
+
+     </div>
+   
+</div>
+</body>
+</html>
+<script src="https://kit.fontawesome.com/2a00a14c7f.js" crossorigin="anonymous"></script>
+<script src="../CheckoutDetailing/payment.js"></script>
+
