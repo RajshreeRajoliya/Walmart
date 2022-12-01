@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/productDetail.css">
+</head>
+<body>
+    <!-- <div id="detailPage"></div>
+    <div id="Page2"></div> -->
+     <div id="nav"></div>
+
+    <div id="MainDetails">
+        <div id="div1">
+            <img id="image1" src="https://i5.walmartimages.com/asr/3e59ef41-fe9e-461a-9c06-176b056db393.6399bcde10eebb9c62c9547e368be4d4.jpeg?odnHeight=160&odnWidth=160&odnBg=FFFFFF">
+            <img id="image2" src="https://i5.walmartimages.com/asr/6fd9ecfc-1da3-4867-b8c0-844a4356269c.88898e4cdfc4af21ec2f9c3ecd0b6fea.jpeg?odnHeight=160&odnWidth=160&odnBg=FFFFFF">
+            <img id="image3" src="https://i5.walmartimages.com/asr/50490e54-c6a2-47c5-874e-bf7bc7fb5f5a.e280c70fbe27bdacaecb80122b142367.jpeg?odnHeight=160&odnWidth=160&odnBg=FFFFFF">
+            <img id="image4" src="https://i5.walmartimages.com/asr/c2b78ebb-5290-4b7a-8307-ae4730325122.449b376d36091124c2642c65895ac4de.jpeg?odnHeight=160&odnWidth=160&odnBg=FFFFFF">
+            <img id="image5" src="https://i5.walmartimages.com/asr/c05ebd56-e4b1-4f43-b2d7-36f9c61ddf19.e9bc5ec3bc419b8a1f24a533499e3310.jpeg?odnHeight=160&odnWidth=160&odnBg=FFFFFF">
+        </div>
+
+        <div id="div2">
+            <div id="2ndDiv">
+                <img id="cocImg" src="https://i5.walmartimages.com/asr/3e59ef41-fe9e-461a-9c06-176b056db393.6399bcde10eebb9c62c9547e368be4d4.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF">
+            </div>
+        </div>
+
+        <div id="div3">
+            <div id="rollback">
+                <div>
+                <button id="btn1">Rollback</button>
+                <button id="btn2">Best Seller</button>
+                <img id="hrtImg"src="https://www.iconpacks.net/icons/2/free-heart-icon-3510-thumb.png">
+            </div>
+
+            <div>
+                <p id="coca">Coca-cola</p>
+                <h3>Coca-Cola Soda Soft Drink, 16.9 fl oz, 6 Pack</h3>
+                <p>reviews</p>
+                <h1>Now $3.28</h1>
+                <p id="price">Price when purchased online</p>
+                <button id="bt3">Add to cart</button>
+                <hr>
+
+            </div>
+            </div>
+
+            <div id="parentDiv">
+                <div id="carDiv">
+                    <img id="carImg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-U0CMdMOjxJLklQEWNIShAZe3Karfz1Y-_kCq8J1J-2l_Bxxs5ol4TZMsp5BdOG9q-Ag&usqp=CAU">
+                    <p id="addTag">Pickup, tomorrow at Sacramento Supercenter</p>
+                </div>
+
+                <div  id="locDiv">
+                    <img  id="locImg" src="https://media.istockphoto.com/id/1193451471/vector/map-pin-vector-glyph-icon.jpg?s=612x612&w=0&k=20&c=wuWVeHuthNAXzjOO5_VY9SUOd-6cxwpVH8VVfh6Y7Lc=">
+                    <p id="locTag">Aisle A22</p>
+                </div>
+
+                <div id="storeDiv">
+                    <img id="deliImg"src="data:image/png;base64,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">
+                    <p id="deliTag">Delievery from store check eligibility</p>
+                    
+                </div>
+            </div>
+            <hr>
+
+            <div id="giftDiv">
+                <img id="giftImg"src="https://www.iconpacks.net/icons/2/free-heart-icon-3510-thumb.png">
+                <p id="giftTag">Add to list</p>
+                <img id="giftImg1"src="https://static.vecteezy.com/system/resources/previews/002/205/948/original/gift-box-icon-free-vector.jpg">
+                <p id="giftTag1">Add to registery</p>
+                
+            </div>
+            <hr>
+
+            <div id="ebtDiv">
+                
+                <button id="ebit">Ebit</button>
+                <p>EBT eligibile</p>
+                <p></p>
+            </div>
+        </div>
+    </div>
+
+    <div id="parentBox">
+        <div id="specification">
+            <h2>About this item</h2>
+            <hr>
+            <h4 id="nTag">Nutrition information</h4>
+            <hr>
+            <h4>Product details</h4>
+            <hr>
+            <h4>Specifications</h4>
+            <hr>
+            <h4>Directions</h4>
+            <hr>
+            <h4>Ingredients</h4>
+
+            
+
+        </div>
+        <div id="Box">
+            <div id="product">
+                <button id="roll">Rollback</button>
+                <p>sponsered</p>
+            </div>
+
+            <div id="productBox">
+                <img id="productImg" src="https://i5.walmartimages.com/asr/be34d31b-246f-42ef-80a3-673c9f8a1734.ee039280c5c203b294bc07f360d41fbb.jpeg?odnHeight=160&odnWidth=160&odnBg=FFFFFF">
+                <div id="pTag">
+                    <p>Now $3.28</p>
+                    <p>Coca-Cola Soda Soft Drink, 16.9 fl oz, 6 Pack</p>
+                    <div>
+                        <button>Pickup</button>
+                        <button>Delivery</button>
+                    </div>
+                    
+                </div>
+            </div>
+            <button id="crtBtn">Add to cart</button>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>
+<script src="js/productDetail.js"></script>
