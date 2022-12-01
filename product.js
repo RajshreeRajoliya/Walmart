@@ -22,6 +22,11 @@ function display(data) {
     div1.setAttribute('class', 'kol');
     let img = document.createElement('img');
     img.src = ele.Product_imgUrl;
+    img.addEventListener('click', detail_page);
+    function detail_page() {
+      localStorage.setItem('detail_me', JSON.stringify(ele));
+      // window.location.href="";
+    }
     div1.append(img);
     let pp = document.createElement('p');
     pp.innerText = '+ADD';
