@@ -132,4 +132,7 @@ var totalListPrice=cartValue.reduce((acc,elem)=>{
 
 document.getElementById("saving23").innerText="$ "+ (+totalListPrice - +total).toFixed(2);
 display();
+document.getElementById("buttonContinue").addEventListener("click", ()=>{
+  window.location.href = "payment.html";
+});
 
