@@ -1,19 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/main.css">
-</head>
-<body>
-    <!-- <h1>Footer</h1> -->
-    <!-- <div id="Box">
-<h4 id="h4tag">We’d love to hear what you think!</h4>
-<button>Give feedback</button>
-    </div> -->
-
+function footer() {
+    return `
     <div id="parentBo">
         <div class="footer">
             <h5 class="ptag">All Departments</h5>
@@ -46,8 +32,7 @@
         <div class="footer">
             <h5 id="h5tag">© 2022 Walmart. All Rights Reserved.</h5>
         </div>
-    </div>
-</body>
-</html>
-
- 
+    </div>`;
+  }
+  export { footer };
+  

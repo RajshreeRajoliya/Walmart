@@ -1,8 +1,32 @@
-import { navbar } from './nav.js';
+import { navbar } from '../nav.js';
 document.querySelector('.nav').innerHTML = navbar();
 
+import { footer } from '../footer.js';
+document.querySelector('.footer').innerHTML = footer();
 
 
+let ProdcutData = JSON.parse(localStorage.getItem("detail_me"))
+
+
+function displayData(ele){
+    var mainIG = document.getElementById("cocImg")
+    mainIG.src = ele.Product_imgUrl
+
+    var brand = document.getElementById("coca")
+    brand.textContent = ele.Brand
+
+
+    var ProductName = document.getElementById("brandName")
+    ProductName.textContent = ele.Product_Name
+
+    var Rate = document.getElementById("rating")
+    Rate.innerText = ele.Rating
+
+    var Price = document.getElementById("Price1")
+    Price.innerText = "Now $"+ele.List_Price
+}
+
+displayData(ProdcutData)
 
 
 

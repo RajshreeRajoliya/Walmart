@@ -1,4 +1,4 @@
-#parentBox{
+#parentBo{
     /* border:1px solid black; */
     width:100%;
     /* margin-left: 8%; */
@@ -47,7 +47,7 @@
     margin-top: 17px;
     margin-right: 10%
 }
-#Box{
+#Box1{
     /* border:solid; */
     height:150px;
     text-align: center;
@@ -58,7 +58,7 @@
 #h4tag{
     padding-top: 30px;
 }
-button{
+/* .button{
     width:11%;
     height:40px;
     border-radius: 40px;
@@ -68,4 +68,4 @@ button{
     border:1px solid black;
     
     
-}
+} */
