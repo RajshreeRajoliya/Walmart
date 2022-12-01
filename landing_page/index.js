@@ -229,3 +229,6 @@ function displayItems() {
     document.querySelector("#cart-card").append(box);
   });
 }
+
+import { navbar } from "../nav.js";
+document.querySelector("#navbar-container").innerHTML = navbar();

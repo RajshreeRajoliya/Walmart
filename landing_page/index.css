@@ -1,6 +1,17 @@
 /* slideshow */
+
 body {
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+#navbar-container {
+  color: white;
+  margin-bottom: 20px;
+  position: fixed;
+  top: 0;
+  /* bottom: 0; */
+  right: 0;
+  width: 100%;
+  z-index: 9999;
 }
 #maindiv {
   color: black;
