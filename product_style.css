@@ -1,8 +1,9 @@
 /** @format */
 
 .nav {
-  height: 150px;
-  background-color: rgb(1, 112, 220);
+  /* height: 150px; */
+  color: white;
+  /* background-color: rgb(1, 112, 220); */
   margin-bottom: 20px;
   position: fixed;
   top: 0;
@@ -44,9 +45,6 @@
   /* border: solid black; */
   align-self: center;
 }
-span {
-  margin: 5px 5px -15px 5px;
-}
 select {
   background-color: rgb(241, 241, 242);
   border: none;
@@ -76,7 +74,7 @@ img {
   width: 80%;
   height: 100%;
 }
-p {
+.pp {
   margin: 0px;
 }
 .olp {

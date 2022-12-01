@@ -1,8 +1,14 @@
 /** @format */
-
+import { navbar } from './nav.js';
 import { product } from './data.js';
-console.log(product);
-let copy = product;
+document.querySelector('.nav').innerHTML = navbar();
+
+// let username = JSON.stringify(localStorage.getItem('user'));
+let username = 'wacxwac';
+let sda = document.querySelector('#us');
+sda.innerHTML = '';
+sda.append('Hi,', username);
+
 display(product);
 
 let ARR = [];
@@ -377,10 +383,10 @@ function hjkkkk() {
 let em = document.querySelector('#empty');
 em.addEventListener('click', mu);
 function mu() {
-  // display(product);
+  display(product);
   Price.setAttribute('style', ' background-color: rgb(227, 228, 229);');
   Speed.setAttribute('style', ' background-color: rgb(227, 228, 229);');
   brand.setAttribute('style', ' background-color: rgb(227, 228, 229);');
   document.querySelector('#change').innerText = 'Best Match';
-  display(copy);
+  // display(product);
 }
