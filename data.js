@@ -12,7 +12,7 @@ let product = [
     "https://i5.walmartimages.com/asr/6fd9ecfc-1da3-4867-b8c0-844a4356269c.88898e4cdfc4af21ec2f9c3ecd0b6fea.jpeg?odnHeight=160&odnWidth=160&odnBg=FFFFFF",
     Product_img3:"https://i5.walmartimages.com/asr/50490e54-c6a2-47c5-874e-bf7bc7fb5f5a.e280c70fbe27bdacaecb80122b142367.jpeg?odnHeight=160&odnWidth=160&odnBg=FFFFFF",
     
-    Product_img4:"https://i5.walmartimages.com/asr/c2b78ebb-5290-4b7a-8307-ae4730325122.449b376d36091124c2642c65895ac4de.jpeg?odnHeight=160&odnWidth=160&odnBg=FFFFFF";
+    Product_img4:"https://i5.walmartimages.com/asr/c2b78ebb-5290-4b7a-8307-ae4730325122.449b376d36091124c2642c65895ac4de.jpeg?odnHeight=160&odnWidth=160&odnBg=FFFFFF",
     
     List_Price: '19.99',
     Sale_Price: '19.99',
