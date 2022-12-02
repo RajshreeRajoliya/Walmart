@@ -1,0 +1,125 @@
+/** @format */
+/* body {
+  color: white;
+} */
+#full {
+  display: flex;
+  height: 100px;
+  background-color: rgb(1, 112, 220);
+  /* border: solid black; */
+  border-bottom: white solid;
+  align-content: center;
+  align-content: center;
+  align-items: center;
+}
+.B {
+  display: flex;
+  height: 60px;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  /* background-color: rgb(1, 112, 220); */
+  /* border: solid black; */
+  /* align-content: center;
+  align-content: center;
+  align-items: center; */
+}
+
+#e {
+  display: flex;
+  height: 25px;
+  width: 40%;
+  border-radius: 30px;
+  /* border: solid black; */
+  padding: 10px;
+  background-color: white;
+}
+.C {
+  display: flex;
+  height: 100%;
+  /* border: solid black; */
+  justify-content: center;
+  align-content: center;
+  padding: 10px;
+  border-radius: 30px;
+}
+.E {
+  width: 33%;
+  height: 40px;
+  /* border: solid black; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#llss {
+  display: flex;
+  /* border: solid black; */
+  height: 40px;
+  background-color: rgb(1, 112, 220);
+  align-items: center;
+}
+input {
+  width: 95%;
+  height: 100%;
+  border-top-left-radius: 30px;
+  outline: none;
+  border-bottom-left-radius: 30px;
+  border: none;
+}
+#Ll {
+  padding: 7px;
+  background-color: rgb(255, 194, 30);
+  height: 22px;
+  width: 22px;
+  border-radius: 50%;
+  color: black;
+}
+.se {
+  display: flex;
+  align-self: center;
+}
+.C:hover {
+  background-color: rgb(2, 79, 155);
+}
+#iop {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 120px;
+  padding: 0px;
+  justify-items: center;
+  align-items: center;
+  /* border: black solid; */
+  /* padding-bottom: -10px; */
+}
+/* #iopp{
+
+} */
+.yui {
+  margin: 0%;
+  margin-left: 20px;
+}
+.G {
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(1, 112, 220);
+  align-items: center;
+  /* border: solid black; */
+  height: 30px;
+  width: 50%;
+}
+.y:hover {
+  text-decoration: underline;
+}
+#bold {
+  display: flex;
+  font-size: 20px;
+  align-items: center;
+}
+.op {
+  /* border: solid black; */
+  align-items: center;
+}
+a {
+  text-decoration: none;
+  color: black;
+}

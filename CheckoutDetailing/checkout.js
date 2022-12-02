@@ -136,3 +136,4 @@ document.getElementById("buttonContinue").addEventListener("click", ()=>{
   window.location.href = "payment.html";
 });
 
+
