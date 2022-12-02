@@ -146,6 +146,7 @@ function rollback() {
 
 let cartItems = [
   {
+    id: 1,
     img_url:
       "https://i5.walmartimages.com/asr/83f533c3-3234-4bea-80bf-a0f9a43cd279_2.9b223f40bab27c513ba64f9f0e3fc2d9.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF",
     price: "$3.57",
@@ -153,6 +154,7 @@ let cartItems = [
     rating: "3.0",
   },
   {
+    id: 2,
     img_url:
       "https://i5.walmartimages.com/asr/59f447c9-ee28-428e-b5b1-698f6fd8dd47.27ef69f3d5b0fa50ce7b17020dc718e6.jpeg",
     price: "$ 9.9",
@@ -160,6 +162,7 @@ let cartItems = [
     rating: "4.0",
   },
   {
+    id: 3,
     img_url:
       "https://i5.walmartimages.com/asr/6b07428c-5a43-4379-b83a-74d7650e993f.8d4fd31b242356d40c7d71151cd71b38.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF",
     price: "$199",
@@ -167,6 +170,7 @@ let cartItems = [
     rating: "4.0",
   },
   {
+    id: 4,
     img_url:
       "https://i5.walmartimages.com/asr/2b163e77-9297-4726-9276-b7319f97ab2e.d1c36937642ec0c5b4912a0c319f31d2.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF",
     price: "$ 999.97",
@@ -174,6 +178,7 @@ let cartItems = [
     rating: "3.4",
   },
   {
+    id: 5,
     img_url:
       "https://i5.walmartimages.com/asr/b96fa548-8658-4a43-8d6b-8c91ee336c05.64c2f8906fdbdd5c3fb8f6a933f7dcb9.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF",
     price: "$ 449.00",
@@ -181,6 +186,7 @@ let cartItems = [
     rating: "4.6",
   },
   {
+    id: 6,
     img_url:
       "https://i5.walmartimages.com/asr/a1398e37-09d8-47da-aed3-f7cdf6338666.672654bd6d10919c3eee82c62b37014d.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF",
     price: "$5.48",
@@ -199,10 +205,67 @@ function displayItems() {
 
     let img = document.createElement("img");
     img.src = items.img_url;
+    img.addEventListener("click", detail_page);
+    function detail_page() {
+      localStorage.setItem("detail_me", JSON.stringify(item));
+    }
 
     let btn = document.createElement("button");
     btn.setAttribute("id", "addToCart");
     btn.textContent = "+ Add";
+    let add = document.createElement("div");
+    let minus = document.createElement("button");
+    let plus = document.createElement("button");
+    minus.innerText = "-";
+    plus.innerText = "+";
+    minus.addEventListener("click", subItems);
+    plus.addEventListener("click", addItems);
+    function subItems() {
+      if (items.count > 0) {
+        let local = JSON.parse(localStorage.getItem("product_added")) || [];
+        let flag = false;
+        local.map(function (ele) {
+          if (ele.id == items.id) {
+            flag = true;
+            items.count--;
+            ele.count--;
+            console.log(items.id, ele.id);
+          }
+        });
+        if (flag == false) {
+          local.push(items);
+        }
+        local.setItem("product_added", JSON.stringify(local));
+        addFun();
+      }
+      if (items.count == 0) {
+        let local = JSON.parse(localStorage.getItem("product_added")) || [];
+        let r = local.filter(function (o) {
+          return o.count > 0;
+        });
+        localStorage.setItem("product_added", JSON.stringify(r));
+        add.innerHTML = "";
+        add.append(addToCart);
+        items.count++;
+      }
+    }
+    function addItems() {
+      add.innerHTML = "";
+      let local = JSON.parse(localStorage.getItem("product_added")) || [];
+      let flag = false;
+      local.map(function (ele) {
+        if (ele.id == item.id) {
+          flag = true;
+          ele.count++;
+          items.count++;
+        }
+      });
+      if (flag == false) {
+        local.push(ele);
+      }
+      localStorage.setItem("product_added", JSON.stringify(local));
+      add(minus,items.count,plus);
+    }
     btn.addEventListener("click", function () {
       addToCart(items);
     });
