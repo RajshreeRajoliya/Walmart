@@ -274,6 +274,7 @@ a {
 }
 
 #card > #btn {
+  cursor: pointer;
   background-color: #0071dc;
   cursor: pointer;
   padding: 10px;
@@ -471,6 +472,7 @@ button:hover {
   border: 0px;
   margin-top: -40px;
   margin-left: 20px;
+  cursor: pointer;
   display: inline-block;
 }
 

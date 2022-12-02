@@ -1,0 +1,321 @@
+#cartBox{
+    width: 55rem;
+    /* border: 5px solid green; */
+    /* margin: auto; */
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+   
+}
+#cartDetails>div>img{
+    width: 50px;
+    height:50px;
+
+}
+#cartDetails{
+    width: 50rem;
+    /* border:5px solid red */
+}
+
+#upperhead{
+  display: flex;
+    border-radius: 10px 10px  0px 0px ;
+    height: 25%;
+    width: 100%;
+    /* border: 3px solid red; */
+    background-color: rgb(242, 248, 253);
+}
+
+#heading{
+    height: 80px;
+    width: 99%;
+   background-color: #0071dc;
+    color: white;
+    border: 3px solid blue;  
+}
+#Checkout{
+    text-align: center;
+}
+#displayItem{
+   /* height: 700px; */
+    width: 80%;
+    margin-top: 3%;
+   /* margin-left: 10%; */
+    border-radius: 10px;
+    margin-bottom: 2%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#truck{
+    width: 90px;
+    margin-left: 25px;
+    margin-top: 35px;
+}
+#freeShip{
+    margin-top:60px;
+   margin-left: 40px;
+   
+}
+#nameaddress{
+    margin-top: 40px;
+    margin-left: 45px;
+}
+hr{
+    border-color:rgb(227, 222, 222);
+    width: 90%;
+    margin: auto;
+}
+#generalinst{
+    margin-top: 40px;
+    margin-left: 45px; 
+}
+#item{
+    margin-top: 40px;
+    margin-left: 45px;
+}
+.fa-solid {
+    color: green;
+    /* border: 2px solid red; */
+}
+#payment{
+    height: 500px;
+    width: 80%;
+    margin-top: 3%;
+   /* margin-left: 10%; */
+    border-radius: 10px;
+    margin-bottom: 2%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#header{
+    display: flex;
+    border-radius: 10px 10px  0px 0px ;
+    height: 25%;
+    width: 100%;
+    /* border: 3px solid red; */
+    background-color: rgb(242, 248, 253);  
+    /* border: 2px solid black; */
+}
+#paymethod{
+    margin-top: 50px;
+    margin-left: 150px;
+}
+#header>h1{
+    margin-left: 1%;
+}
+#headcard{
+margin-left: 20px;
+margin-top: 20px;
+}
+#allcards > img{
+height: 50px;
+width: 70px;
+margin-left:1%;
+
+}
+#line{
+    margin-left: 20px;
+}
+#forinput{
+    margin-left: 20px;
+    color: rgb(76, 72, 72);   
+}
+#inputbox{
+    width: 70%;
+    height: 2%;
+ margin-left: 15%;
+ margin-right: 15%;
+ padding: 15px;
+}
+#btn{
+    background-color: #0071dc;
+    color: white;
+    height: 8%;
+    width: 20%;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 15px;
+    margin-left: 70%;
+    margin-top: 10px;
+}
+#contact{
+    height: 500px;
+    width: 80%;
+    margin-top: 3%;
+   /* margin-left: 10%; */
+    border-radius: 10px;
+    margin-bottom: 2%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; 
+}
+#mobilehead{
+    display: flex;
+    border-radius: 10px 10px  0px 0px ;
+    height: 25%;
+    width: 100%;
+    /* border: 3px solid red; */
+    background-color: rgb(242, 248, 253);  
+    /* border: 2px solid black; */  
+}
+#headingtomobile{
+    margin-top: 50px;
+    margin-left: 150px;
+}
+#headingtomobile{
+ margin-left: 2%;
+
+}
+#inputbox2{
+   
+        width: 40%;
+        height: 7%;
+     margin-left: 15%;
+     margin-right: 15%;
+     padding: 15px;
+}
+#chkbox{
+    background-color: goldenrod;
+    width: 20px;
+     margin-bottom: 80px;
+}
+#messs{
+    color: rgb(80, 79, 79);
+    margin-left: 20px;
+    margin-right: 20px;
+}
+#chktick{
+    margin-left: 30px;
+} 
+
+#subtotal{
+    width: 40%;
+    height: 40%;
+    /* border: 2px solid red; */
+    /* margin-left: 56%; */
+    /* margin-top: -120%; */
+    border-radius: 10px;
+    /* margin-bottom: 2%; */
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    /* border: 2px solid red; */
+    padding: 20px;
+}
+#subTotal_cart{
+display: flex;
+justify-content: center;
+max-width: 100%;
+gap: 3%;
+margin: auto;
+
+}
+
+#bonus{
+    height: 25%;
+    width: 100%;
+    border-radius: 10px 10px  0px 0px ;
+    border-radius: 10px;
+    position: sticky;
+   
+}
+#btndiv{
+    margin-top: 30px;
+   margin-left: 40px;
+}
+#buttonContinue{
+    width: 100%;
+    height: 40px;
+    border-radius: 30px;
+    background-color: #0071dc;
+    border: #0071dc;
+    color: #fff;
+    font-weight: 700;
+    margin-left: -20px;
+    margin-top: 50px;
+}
+#saving{
+    width: 80%;
+    height: 35%;
+    border:#002d58;
+    margin-top: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: #002d58;
+    color: white;
+    padding: 5px;
+    border-radius: 8px;
+    
+}
+#saving p {
+    margin-top: -45px; 
+     margin-left: 80px;
+     font-size: large;
+    
+}
+#saving img{
+    margin-left: 30px;
+    margin-top: 10px;
+}
+#learnHow{
+    align-items: flex-end;
+    margin: 80%;
+}
+#affirm{
+margin-left: 68%
+}
+#checkOUt{
+    display: block;
+}
+#mainConatiner{
+border: 10px solid black;
+
+display: flex;
+}
+#cartDetails{
+ 
+    width: 60%;
+    padding: auto;
+    padding-left: 5%;
+    
+}
+#cartDetails > div>img{
+    width: 100px;
+    height: 100px;
+}
+#roundQtyBtn{
+  
+    background-color:red;
+    color: white;
+    font-size: larger;
+    font-weight: bold;
+    width: 35px;
+    height: 35px;
+    border-radius: 20px;
+    
+}
+#subtotal{
+    /* border: 2px solid orange; */
+    /* margin-top: -135%; */
+    display: flex;
+    margin-bottom: 10;
+}
+#mainContainer{
+    /* border: 5px solid red; */
+ display: flex;
+ gap: 1%;
+ padding: 1%;
+ margin: auto;
+ padding:1% 7%;
+}
+#container{
+    /* display: flex; */
+    /* border: 5px solid black; */
+    /* padding: 5%; */
+    width: 50%
+}
+#displayItem{
+    /* border: 5px solid green; */
+    width: 100%;
+}
+#payment{
+    width: 100%;
+}
+#contact{
+    width: 100%;
+}
+#subtotal{
+    margin-top: 1.8%;
+}

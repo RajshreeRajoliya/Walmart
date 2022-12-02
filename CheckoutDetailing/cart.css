@@ -1,0 +1,146 @@
+#cartBox{
+    width: 55rem;
+    /* border: 5px solid green; */
+    /* margin: auto; */
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+   
+}
+#cartDetails>div>img{
+    width: 50px;
+    height:50px;
+
+}
+#cartDetails{
+    width: 50rem;
+    /* border:5px solid red */
+}
+
+#upperhead{
+    border-radius: 10px 10px  0px 0px ;
+    height: 25%;
+    width: 100%;
+    /* border: 3px solid red; */
+    background-color: rgb(242, 248, 253);
+}
+#displayItem{
+    height: 22%;
+    width: 110%;
+    margin-top: 20px;
+   
+    border-radius: 10px;
+    margin-bottom: 5%;
+    /* border: 3px solid blue; */
+}
+#truck{
+    width: 90px;
+    margin-left: 25px;
+    margin-top: 35px;
+}
+#freeShip{
+    margin-top: -70px;
+    margin-left: 150px;
+}
+#goldenGate{
+  
+    margin-left: 150px;
+   margin-top: -26px;
+padding-bottom:89px;
+}
+.btn1{
+    margin-left: 20px;
+    margin-top: 8px;
+    width: 100px;
+    padding: 4px;
+    background: #ffc220;
+    border: #ffc220;
+    border-radius: 3px;
+}
+.btn2{
+    margin-left: 6px;
+    margin-top: 8px;
+    padding: 4px;
+    width: 100px;
+    box-shadow: inset 0 0 0 0.0625rem #004f9a;
+    color: #004f9a;
+  
+}
+#subtotal{
+    width: 40rem;
+    height: 39rem;
+    /* border: 2px solid red; */
+}
+#subTotal_cart{
+display: flex;
+justify-content: center;
+max-width: 100%;
+gap: 3%;
+margin: auto;
+}
+
+#bonus{
+    height: 25%;
+    width: 100%;
+    border-radius: 10px 10px  0px 0px ;
+    /* border: 3px solid red;  */
+    /* margin-left: 60%; */
+    /* margin-top: -65%; */
+    border-radius: 10px;
+    position: sticky;
+}
+#btndiv{
+    margin-top: 30px;
+   margin-left: 40px;
+}
+#buttonContinue{
+    width: 100%;
+    height: 40px;
+    border-radius: 30px;
+    background-color: #0071dc;
+    border: #0071dc;
+    color: #fff;
+    font-weight: 700;
+}
+#saving{
+    width: 80%;
+    height: 35%;
+    border:#002d58;
+    margin-top: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: #002d58;
+    color: white;
+    padding: 5px;
+    border-radius: 8px;
+}
+#saving p {
+    margin-top: -45px; 
+     margin-left: 80px;
+     font-size: large;
+    
+}
+#saving img{
+    margin-left: 30px;
+    margin-top: 10px;
+}
+#learnHow{
+    align-items: flex-end;
+    margin: 80%;
+}
+#affirm{
+margin-left: 68%
+}
+#checkOUt{
+    display: block;
+}
+#saveLater{
+    width: 55rem;
+    height: 38rem;
+    border: 2px solid blueviolet;
+    margin-left: 17%;
+    margin-top: 3%;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+#displayItem{
+    width: 100%;
+}
