@@ -19,14 +19,17 @@ body {
   grid-template-columns: 1fr 1fr;
   grid-gap: 200px;
 }
+.sidediv{
+  margin-top: 112px;
+}
 .sidediv img {
   margin-left: 230px;
-  width: 390px;
-  height: 600px;
+  width: 350px;
+  height: 550px;
 }
 #all_slider {
   position: relative;
- 
+
   left: 0px;
   right: 0px;
   width: 100%;
@@ -272,6 +275,7 @@ a {
 
 #card > #btn {
   background-color: #0071dc;
+  cursor: pointer;
   padding: 10px;
   color: white;
   border-radius: 20px;
@@ -459,6 +463,7 @@ button:hover {
   text-align: center;
 }
 #box > #addToCart {
+  cursor: pointer;
   background-color: #0071dc;
   padding: 10px;
   color: white;
