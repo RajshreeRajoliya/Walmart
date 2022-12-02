@@ -1,6 +1,9 @@
 /** @format */
 import { navbar } from './nav.js';
 import { product } from './data.js';
+import { fetchdata } from './compoents/fetch.js';
+// import { get, gte } from 'lodash';
+
 document.querySelector('.nav').innerHTML = navbar();
 
 // let username = JSON.stringify(localStorage.getItem('user'));
@@ -9,7 +12,19 @@ let sda = document.querySelector('#us');
 sda.innerHTML = '';
 sda.append('Hi,', username);
 
-display(product);
+// display(product);
+let url = `http://localhost:3000/porducts`;
+
+let getdata = (url) => {
+  fetchdata(url)
+    .then(function (data) {
+      console.log(data.meals);
+      //   return data;
+      display(product);
+    })
+    .catch(function () {});
+};
+getdata(url);
 
 let ARR = [];
 function display(data) {

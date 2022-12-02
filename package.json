@@ -1,0 +1,22 @@
+{
+  "name": "walmart",
+  "version": "1.0.0",
+  "description": "",
+  "main": "data.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RajshreeRajoliya/Walmart.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RajshreeRajoliya/Walmart/issues"
+  },
+  "homepage": "https://github.com/RajshreeRajoliya/Walmart#readme",
+  "dependencies": {
+    "json-server": "^0.17.1"
+  }
+}
