@@ -100,14 +100,14 @@
     {
       "id": 2,
       "img_url": "https://i5.walmartimages.com/asr/59f447c9-ee28-428e-b5b1-698f6fd8dd47.27ef69f3d5b0fa50ce7b17020dc718e6.jpeg",
-      " price": "$ 9.9",
+      "price": "$ 9.9",
       "type": "Angel Soft Toilet Paper, 12 Mega Rolls",
       "rating": "4.0"
     },
     {
       "id": 3,
       "img_url": "https://i5.walmartimages.com/asr/6b07428c-5a43-4379-b83a-74d7650e993f.8d4fd31b242356d40c7d71151cd71b38.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF",
-      " price": "$199",
+      "price": "$199",
       "type": "Nintendo Switch™ Lite - Blue",
       "rating": "4.0"
     },
@@ -122,7 +122,7 @@
       "id": 5,
       "img_url": "https://i5.walmartimages.com/asr/b96fa548-8658-4a43-8d6b-8c91ee336c05.64c2f8906fdbdd5c3fb8f6a933f7dcb9.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF",
       "price": "$ 449.00",
-      " type": "Core Innovations CLT136401SL 14 Notebook - Intel Atom Z3850 - 4GB RAM - 64GB SSD - 1920 x 1080",
+      "type": "Core Innovations CLT136401SL 14 Notebook - Intel Atom Z3850 - 4GB RAM - 64GB SSD - 1920 x 1080",
       "rating": "4.6"
     },
     {
@@ -135,7 +135,7 @@
   ],
   "rollbackItems": [
     {
-      " img_url": "https://i5.walmartimages.com/asr/c00047a0-20e0-4bfc-bea6-e7f0abdd3e73.283cab9661ccd6ecd23065fec9e9d98b.png?odnHeight=612&odnWidth=612&odnBg=FFFFFF",
+      "img_url": "https://i5.walmartimages.com/asr/c00047a0-20e0-4bfc-bea6-e7f0abdd3e73.283cab9661ccd6ecd23065fec9e9d98b.png?odnHeight=612&odnWidth=612&odnBg=FFFFFF",
       " price": "$9.96",
       "type": "Bootcut Jeans, Womens",
       "rating": "4.2"

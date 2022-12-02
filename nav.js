@@ -38,16 +38,18 @@ function navbar() {
     <div class="E" style="width: 24%">
       <div id="iop" class="C">
         Reorder
-
         <p class="yui" id="bold">My Items</p>
       </div>
       <div id="iop" class="C">
-        <div id="us">sign In</div>
-
-        <p class="yui" id="bold">Account</p>
+        <a href="create.html">
+          <div id="us">sign In</div>
+          <p class="yui" id="bold">Account</p></a
+        >
       </div>
       <div id="iop" class="C" style="width: 40px">
-        <span class="material-symbols-outlined"> shopping_cart </span>
+        <a href="CheckoutDetailing/cart.html"
+          ><span class="material-symbols-outlined"> shopping_cart </span></a
+        >
       </div>
     </div>
   </div>

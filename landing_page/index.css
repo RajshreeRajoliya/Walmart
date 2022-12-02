@@ -1,8 +1,8 @@
-/* slideshow */
+/** @format */
 
-body {
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-}
+/* body {
+  /* font-family: Helvetica Neue, Helvetica, Arial, sans-serif; */
+/* } */
 #navbar-container {
   color: white;
   margin-bottom: 10px;
@@ -19,14 +19,17 @@ body {
   grid-template-columns: 1fr 1fr;
   grid-gap: 200px;
 }
+.sidediv {
+  margin-top: 112px;
+}
 .sidediv img {
   margin-left: 230px;
-  width: 390px;
-  height: 600px;
+  width: 350px;
+  height: 550px;
 }
 #all_slider {
   position: relative;
- 
+
   left: 0px;
   right: 0px;
   width: 100%;
@@ -191,7 +194,7 @@ body {
 }
 .text {
   text-align: center;
-  font-family: BogleWeb, Helvetica Neue, Helvetica, Arial, sans-serif;
+  /* font-family: BogleWeb, Helvetica Neue, Helvetica, Arial, sans-serif; */
 }
 .description {
   color: black;
@@ -207,7 +210,7 @@ body {
   justify-content: center;
   border-radius: 10px;
   margin-top: 590px;
-  background-image: url("https://cdn.corporate.walmart.com/dims4/WMT/34e46d1/2147483647/strip/true/crop/1221x814+10+0/resize/600x400!/quality/90/?url=https%3A%2F%2Fcdn.corporate.walmart.com%2F44%2F8b%2F729cd4724f9db23d275be1935560%2Fblue-background-1.png");
+  background-image: url('https://cdn.corporate.walmart.com/dims4/WMT/34e46d1/2147483647/strip/true/crop/1221x814+10+0/resize/600x400!/quality/90/?url=https%3A%2F%2Fcdn.corporate.walmart.com%2F44%2F8b%2F729cd4724f9db23d275be1935560%2Fblue-background-1.png');
   box-shadow: #0000003d 0px 3px 8px;
 }
 #membership > div {
@@ -273,6 +276,7 @@ a {
 #card > #btn {
   cursor: pointer;
   background-color: #0071dc;
+  cursor: pointer;
   padding: 10px;
   color: white;
   border-radius: 20px;
@@ -356,7 +360,7 @@ a {
 .threeBox > div h3,
 p,
 button {
-  font-family: sans-serif;
+  /* font-family: sans-serif; */
   line-height: 14px;
   margin-left: 10px;
 }
@@ -375,7 +379,7 @@ button:hover {
 }
 .threeBox > p {
   font-size: 13px;
-  font-family: Helvetica;
+  /* font-family: Helvetica; */
 }
 .threeBox > div img {
   width: 100%;
@@ -460,6 +464,7 @@ button:hover {
   text-align: center;
 }
 #box > #addToCart {
+  cursor: pointer;
   background-color: #0071dc;
   padding: 10px;
   color: white;
