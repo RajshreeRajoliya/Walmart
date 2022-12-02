@@ -6,6 +6,11 @@ let product = [
     Product_Name: 'Coca-Cola Soda Soft Drink, 16.9 fl oz, 6 Pack',
     Product_imgUrl:
       'https://i5.walmartimages.com/asr/3e59ef41-fe9e-461a-9c06-176b056db393.6399bcde10eebb9c62c9547e368be4d4.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF',
+    Product_img1:
+    "https://i5.walmartimages.com/asr/3e59ef41-fe9e-461a-9c06-176b056db393.6399bcde10eebb9c62c9547e368be4d4.jpeg?odnHeight=160&odnWidth=160&odnBg=FFFFFF",
+    Product_img2:
+    "https://i5.walmartimages.com/asr/6fd9ecfc-1da3-4867-b8c0-844a4356269c.88898e4cdfc4af21ec2f9c3ecd0b6fea.jpeg?odnHeight=160&odnWidth=160&odnBg=FFFFFF",
+    
     List_Price: '19.99',
     Sale_Price: '19.99',
     Rating: '4.5',
