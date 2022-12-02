@@ -10,6 +10,9 @@ let product = [
     "https://i5.walmartimages.com/asr/3e59ef41-fe9e-461a-9c06-176b056db393.6399bcde10eebb9c62c9547e368be4d4.jpeg?odnHeight=160&odnWidth=160&odnBg=FFFFFF",
     Product_img2:
     "https://i5.walmartimages.com/asr/6fd9ecfc-1da3-4867-b8c0-844a4356269c.88898e4cdfc4af21ec2f9c3ecd0b6fea.jpeg?odnHeight=160&odnWidth=160&odnBg=FFFFFF",
+    Product_img3:"https://i5.walmartimages.com/asr/50490e54-c6a2-47c5-874e-bf7bc7fb5f5a.e280c70fbe27bdacaecb80122b142367.jpeg?odnHeight=160&odnWidth=160&odnBg=FFFFFF",
+    
+    Product_img4:"https://i5.walmartimages.com/asr/c2b78ebb-5290-4b7a-8307-ae4730325122.449b376d36091124c2642c65895ac4de.jpeg?odnHeight=160&odnWidth=160&odnBg=FFFFFF";
     
     List_Price: '19.99',
     Sale_Price: '19.99',
@@ -23,6 +26,13 @@ let product = [
     Product_Name: 'Coke Zero Sugar Soda Soft Drink, 12 fl oz, 24 Pack',
     Product_imgUrl:
       'https://i5.walmartimages.com/asr/4cae1f66-16ea-45c5-96ba-12df9790649f.14517b3914a16d59e83d42120ebc3e54.jpeg',
+    Product_img1:
+    "https://i5.walmartimages.com/asr/fadaed51-5873-4bdc-b4d8-b1284c968700.1024588d181611ce6acf5beb1d3ecf38.jpeg?odnHeight=160&odnWidth=160&odnBg=FFFFFF",
+    Product_img2:
+    "https://i5.walmartimages.com/asr/9dc3ce02-79e7-4bba-af4b-311999db32b7.9771580adbfd522a1b940d3015894b52.jpeg?odnHeight=160&odnWidth=160&odnBg=FFFFFF",   
+    Product_img3:
+    "https://i5.walmartimages.com/asr/bfb5f88f-814c-4319-b8eb-44c571dd0d1f.b13402072edecb835e27ad18a521a6b7.jpeg?odnHeight=160&odnWidth=160&odnBg=FFFFFF",   
+   
     List_Price: '12.99',
     Sale_Price: '12.99',
     Rating: '3.5',
@@ -35,6 +45,9 @@ let product = [
     Product_Name: 'Mountain Dew Citrus Soda Pop, 12 oz, 12 Pack Cans',
     Product_imgUrl:
       'https://i5.walmartimages.com/asr/32371fe9-f632-4369-9081-98c634172254.df293ba3701ba996ab3e7b2e2ccc33f7.jpeg?odnHeight=2000&odnWidth=2000&odnBg=FFFFFF',
+    Product_img1:"https://i5.walmartimages.com/asr/cd7be1e3-7490-4446-85e7-754a209f8538_1.9fd6e920d3f7aeb6ca088f9dfd93c560.jpeg?odnHeight=160&odnWidth=160&odnBg=FFFFFF",
+    Product_img2:"https://i5.walmartimages.com/asr/afa9ce47-d46b-44da-9aee-7db8cc300f39_1.5dc863d2bc55fb8768989970c3fb915c.jpeg?odnHeight=160&odnWidth=160&odnBg=FFFFFF",
+    Product_img3:"https://i5.walmartimages.com/asr/8bc97ca9-6db4-4548-b132-bbd7f046111c_1.2a36be7e3f7f3d3e583b033e70d429bf.jpeg?odnHeight=160&odnWidth=160&odnBg=FFFFFF",
     List_Price: '6.99',
     Sale_Price: '7.99',
     Rating: '3.5',
@@ -47,6 +60,9 @@ let product = [
     Product_Name: 'Pepsi Cola Soda Pop, 12 oz, 12 Pack Cans',
     Product_imgUrl:
       'https://i5.walmartimages.com/asr/fbb6fba8-f41d-4a20-ae1e-78b28ed66097_1.4da5e8f03e2d26d976d04462a4c5d49a.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF',
+    Product_img1:"https://i5.walmartimages.com/asr/d89ce159-01cd-4a13-bc0b-f9a2c6e32dce_1.5756ffb75b3de919e6f4caab5e19395f.jpeg?odnHeight=160&odnWidth=160&odnBg=FFFFFF",
+     Product_img2:"https://i5.walmartimages.com/asr/f48b76cc-a85b-4f6e-98d6-13b9fbff188c_2.81d4ab6c18ab2e8bab906981b0d020af.jpeg?odnHeight=160&odnWidth=160&odnBg=FFFFFF",
+     Product_img3:"https://i5.walmartimages.com/asr/f1d2ba19-4ea4-422f-8f7f-6e48d626ae23_1.11aeabe94be13a139df63e7fc385c7c2.jpeg?odnHeight=160&odnWidth=160&odnBg=FFFFFF",
     List_Price: '2.99',
     Sale_Price: '4.99',
     Rating: '3.5',
