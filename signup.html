@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="https://www.walmart.com/favicon.ico" type="image/x-icon" />
+
+    <title>SignUp</title>
+    <style>
+        body {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+}
+
+#child-1 img {
+    height: 30px;
+}
+
+#child-1 h1 {
+    font-weight: 500;
+}
+
+#child-1 {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    font-size: 9px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+form {
+    position: relative;
+    display: grid;
+    width: 300px;
+    margin: auto;
+    gap: 10px;
+}
+
+input {
+    padding: 15px;
+}
+
+
+
+
+
+#message {
+    width: 75%;
+    font-size: x-small;
+    margin: auto;
+}
+
+.valid {
+    color: green;
+}
+
+.valid::before {
+    position: relative;
+    left: -35px;
+    content: "✔";
+   
+}
+
+
+
+
+.invalid {
+    color: red;
+}
+
+.invalid::before {
+    position: relative;
+    left: -35px;
+    content: "✖";
+}
+
+#show-message {
+    font-size: 11px;
+    margin-top: -15px;
+}
+
+#info-div {
+    margin-top: -15px;
+}
+
+#info10 {
+    display: flex;
+    width: 140px;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -10px;
+}
+
+#info10>h5 {
+    font-size: 13px;
+    font-weight: 700;
+}
+
+#info10>input[type="checkbox"] {
+    accent-color: black;
+    width: 15px;
+    /*Desired width*/
+    height: 30px;
+    /*Desired height*/
+}
+
+#info11 {
+    display: flex;
+    align-items: center;
+    font-size: small;
+    margin-top: -25px;
+}
+
+#info11 span {
+    border: none;
+    background-color: white;
+    text-decoration: underline;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+#info20 {
+    display: flex;
+    align-items: center;
+    /* justify-content: flex-end; */
+    margin-top: -10px;
+}
+
+#info20>input[type="checkbox"] {
+    accent-color: black;
+    width: 15.5px;
+    /*Desired width*/
+    height: 30px;
+    /*Desired height*/
+}
+
+#info20>p {
+    font-size: 12px;
+    color: #74767c;
+}
+
+#info21>p {
+    font-size: 12px;
+    margin-top: -5px;
+    color: #74767c;
+}
+
+#info20 {
+    width: 270px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#info3 {
+    font-size: 12px;
+}
+
+#info3>p {
+    color: #74767c;
+}
+
+#info3>p>a {
+    color: black;
+}
+
+#createanaccount {
+    border-radius: 150px;
+    background-color: rgb(0, 113, 220);
+    color: white;
+    height: 40px;
+    border: none;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover,
+button[type="submit"]:focus-within {
+    background-color: #004281;
+}
+
+
+hr {
+    margin-top: 20px;
+    border: 2px solid rgb(241, 241, 242);
+}
+
+#form2 {
+    display: flex;
+    width: 1200px;
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 13px;
+}
+
+#footer1 {
+    width: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#footer1>a {
+    color: #74767c;
+}
+
+
+
+    </style>
+   
+   
+</head>
+
+<body>
+    <div id="navbar"></div>
+    <div id="container">
+        
+        <div id="child-1">
+            <div>
+                <a href="../index.html">
+                    <img src="https://i5.walmartimages.com/dfw/4ff9c6c9-991c/k2-_03d329be-5936-4ef6-ad29-95e392df014d.v1.png" alt="logo" /></a>
+            </div>
+            <div>
+                <h1>Create your Walmart account</h1>
+            </div>
+        </div>
+
+        
+        <div id="child-2">
+            <form action="" id="signup_form">
+                <input id="firstname" type="text" placeholder="First name" required />
+                <input id="lastname" type="text" placeholder="Last name" required />
+                
+                <input id="email" type="text" placeholder="Email Adress" required />
+                <input id="password" type="password" placeholder="Enter your Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required />
+               
+                <div id="message">
+                    <h3>Password must contain the following:</h3>
+                    <p >A <b>lowercase</b> letter</p>
+                    <p >
+                        A <b>capital (uppercase)</b> letter
+                    </p>
+                    <p >A <b>number</b></p>
+                    <p >Minimum <b>8 characters</b></p>
+                </div>
+                <div id="info-div">
+                    <div id="info1">
+                        <div id="info10">
+                            <input type="checkbox" checked />
+                            <h5>Keep me signed in</h5>
+                        </div>
+                        <div id="info11">
+                            <p>Uncheck if using a public device.</p>
+                            <span id="extractmessage">Show</span>
+                        </div>
+                        <div id="show-message">
+                            <p>
+                                We'll keep you signed in on this device. You may be asked to enter your password when modifying sensitive account information.
+                            </p>
+                        </div>
+                    </div>
+                    <div id="info2">
+                        <div id="info20">
+                            <input type="checkbox" checked />
+                            <p>Send me emails about new arrivals, hot items,</p>
+                        </div>
+                        <div id="info21">
+                            <p>daily savings, & more.</p>
+                        </div>
+                    </div>
+
+                    <div id="info3">
+                        <p>
+                            By clicking Create Account, you acknowledge you have read and agreed to our <a href=""> Terms of Use</a>&nbsp;and
+                            <a href="">Privacy Policy </a>.
+                        </p>
+                    </div>
+                </div>
+
+                <button id="createanaccount" type="submit">Create Account</button> 
+
+                
+                      
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div>
+        <hr class-1 />
+    </div>
+    <footer>
+        <form id="form2">
+            <div id="footer0">
+                <p>©2022 Walmart. All Rights Reserved.</p>
+            </div>
+            <div id="footer1">
+                <a href="">CA Privacy Rights</a>
+
+                <a href="">Do Not Sell My Personal Information</a>
+                <a href="">Request My Personal Information</a>
+                <a href="">California Supply Chains Act</a>
+            </div>
+        </form>
+    </footer>
+    <a href="signup.html"></a>
+   
+</body>
+<script>
+    let signup_form = document.getElementById("signup_form");
+signup_form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  let signup_form_fname = document.getElementById("firstname").value;
+  let signup_form_lname = document.getElementById("lastname").value;
+  let signup_form_email = document.getElementById("email").value;
+  let signup_form_password = document.getElementById("password").value;
+
+  let signup_form_data =
+    JSON.parse(localStorage.getItem("signup_form_data")) || [];
+
+  let exists =
+    signup_form_data.length &&
+    JSON.parse(localStorage.getItem("signup_form_data")).some(
+      (data) =>
+       
+        data.signup_form_email == signup_form_email
+    );
+
+  if (!exists) {
+    signup_form_data.push({
+      signup_form_fname,
+      signup_form_lname,
+      signup_form_email,
+      signup_form_password,
+    });
+
+    localStorage.setItem("signup_form_data", JSON.stringify(signup_form_data));
+    signup_form.reset();
+    document.getElementById("firstname").focus();
+    alert("account created succefful please login");
+    window.location.href = "eadress.html";
+  } else {
+    alert("user already exists");
+  }
+});
+  
+</script>
+
+</html>
