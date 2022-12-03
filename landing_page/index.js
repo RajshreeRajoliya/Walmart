@@ -114,7 +114,7 @@ function rollback(rollbackItems) {
 
     var price = document.createElement('h2');
     price.setAttribute('id', 'price');
-    price.textContent = item.price;
+    price.textContent = '$'+item.price;
 
     var type = document.createElement('p');
     type.setAttribute('id', 'type');
@@ -215,65 +215,65 @@ function displayItems(cartItems) {
     let btn = document.createElement('button');
     btn.setAttribute('id', 'addToCart');
     btn.textContent = '+ Add';
-    let add = document.createElement('div');
-    let minus = document.createElement('button');
-    let plus = document.createElement('button');
-    minus.innerText = '-';
-    plus.innerText = '+';
-    minus.addEventListener('click', subItems);
-    plus.addEventListener('click', addItems);
-    function subItems() {
-      if (items.count > 0) {
-        let local = JSON.parse(localStorage.getItem('product_added')) || [];
-        let flag = false;
-        local.map(function (ele) {
-          if (ele.id == items.id) {
-            flag = true;
-            items.count--;
-            ele.count--;
-            console.log(items.id, ele.id);
-          }
-        });
-        if (flag == false) {
-          local.push(items);
-        }
-        local.setItem('product_added', JSON.stringify(local));
-        addFun();
-      }
-      if (items.count == 0) {
-        let local = JSON.parse(localStorage.getItem('product_added')) || [];
-        let r = local.filter(function (o) {
-          return o.count > 0;
-        });
-        localStorage.setItem('product_added', JSON.stringify(r));
-        add.innerHTML = '';
-        add.append(addToCart);
-        items.count++;
-      }
-    }
-    function addItems() {
-      add.innerHTML = '';
-      let local = JSON.parse(localStorage.getItem('product_added')) || [];
-      let flag = false;
-      local.map(function (ele) {
-        if (ele.id == item.id) {
-          flag = true;
-          ele.count++;
-          items.count++;
-        }
-      });
-      if (flag == false) {
-        local.push(ele);
-      }
-      localStorage.setItem('product_added', JSON.stringify(local));
-      add(minus, items.count, plus);
-    }
-    btn.addEventListener('click', function () {
-      addToCart(items);
-    });
+    // let add = document.createElement('div');
+    // let minus = document.createElement('button');
+    // let plus = document.createElement('button');
+    // minus.innerText = '-';
+    // plus.innerText = '+';
+    // minus.addEventListener('click', subItems);
+    // plus.addEventListener('click', addItems);
+    // function subItems() {
+    //   if (items.count > 0) {
+    //     let local = JSON.parse(localStorage.getItem('product_added')) || [];
+    //     let flag = false;
+    //     local.map(function (ele) {
+    //       if (ele.id == items.id) {
+    //         flag = true;
+    //         items.count--;
+    //         ele.count--;
+    //         console.log(items.id, ele.id);
+    //       }
+    //     });
+    //     if (flag == false) {
+    //       local.push(items);
+    //     }
+    //     local.setItem('product_added', JSON.stringify(local));
+    //     addFun();
+    //   }
+    //   if (items.count == 0) {
+    //     let local = JSON.parse(localStorage.getItem('product_added')) || [];
+    //     let r = local.filter(function (o) {
+    //       return o.count > 0;
+    //     });
+    //     localStorage.setItem('product_added', JSON.stringify(r));
+    //     add.innerHTML = '';
+    //     add.append(addToCart);
+    //     items.count++;
+    //   }
+    // }
+    // function addItems() {
+    //   add.innerHTML = '';
+    //   let local = JSON.parse(localStorage.getItem('product_added')) || [];
+    //   let flag = false;
+    //   local.map(function (ele) {
+    //     if (ele.id == item.id) {
+    //       flag = true;
+    //       ele.count++;
+    //       items.count++;
+    //     }
+    //   });
+    //   if (flag == false) {
+    //     local.push(ele);
+    //   }
+    //   localStorage.setItem('product_added', JSON.stringify(local));
+    //   add(minus, items.count, plus);
+    // }
+    // btn.addEventListener('click', function () {
+    //   addToCart(items);
+    // });
 
     let price = document.createElement('h2');
-    price.textContent = items.price;
+    price.textContent = '$' + items.price;
 
     let title = document.createElement('h4');
     title.textContent = items.type;

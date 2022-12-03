@@ -6,12 +6,7 @@ function navbar() {
     <div class="E">
       <div id="iop" class="C" style="display: flex">
         <div>
-          <p id="bold">
-            walmart
-            <span id="pc" class="material-symbols-outlined">
-              recommend
-            </span>
-          </p>
+        <img  class = "logo" src="logo-removebg-preview.png" alt="logo">
         </div>
       </div>
       <!-- <div><span class="material-symbols-outlined"> window </span></div> -->

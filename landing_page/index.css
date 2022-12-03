@@ -1,24 +1,40 @@
 /* slideshow */
-body {
+/* body {
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-}
-#navbar-container{
-  width: 100%;
-  margin: auto;
+} */
+#navbar-container {
   color: white;
+  margin-bottom: 20px;
+  position: fixed;
+  top: 0;
+  /* bottom: 0; */
+  right: 0;
+  width: 100%;
+  z-index: 9999;
 }
 #maindiv {
   color: black;
+  /* width: 80%;
+  margin: auto; */
   /* margin: 270px; */
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 200px;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+.sidediv {
+  width: 50%;
+  /* height: 20%; */
+  margin: auto;
+  margin-top: 190px;
+  /* background-color: teal; */
 }
 .sidediv img {
-  margin-top: 92px;
-  margin-left: 230px;
-  width: 390px;
-  height: 480px;
+  /* margin-top: 15px; */
+  /* margin-left: 230px; */
+  width: 100%;
+  height: 395px;
+  /* height: 500px; */
 }
 #all_slider {
   position: relative;
@@ -27,13 +43,19 @@ body {
   width: 100%;
 }
 .slider {
+  width: 80%;
+  margin: auto;
   position: absolute;
-  top: 100px;
+  top: 200px;
   left: 30px;
   right: 30px;
   visibility: hidden;
   transition: 0.5s;
   opacity: 0;
+}
+.slider img {
+  width: 70%;
+  height: 10%;
 }
 .active {
   opacity: 1;
@@ -76,15 +98,21 @@ body {
 /* 1st div */
 
 .mainpage0 {
+  width: 50%;
+  margin: auto;
   height: 70%;
   position: absolute;
   border: 0px solid rgb(26, 55, 75);
   display: flex;
   flex-direction: row;
   margin-top: 30px;
-  margin-left: 90px;
+  margin-left: 115px;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 .page0 {
+  width: 50%;
+  margin: auto;
+
   border: 0px solid rgb(26, 55, 75);
   width: 390px;
   margin: 14px 14px 14px 14px;
@@ -92,9 +120,10 @@ body {
 .page00 {
   display: flex;
   border: 0px solid rgb(26, 55, 75);
-  width: 350px;
-  height: 130px;
-  margin: 0px 0px 14px 0px;
+  width: 380px;
+  height: 100px;
+  margin-left: 10px;
+  /* margin: 0px 0px 14px 0px; */
   padding: 14px 14px 14px 14px;
   box-shadow: 1px 2px 2px 2px rgb(202, 199, 199);
   border-radius: 6px;
@@ -105,9 +134,10 @@ body {
 }
 .page01 {
   border: 0px solid rgb(26, 55, 75);
-  width: 350px;
+  width: 380px;
   height: 267px;
-  margin: 0px 0px 0px 0px;
+  margin: 5px 0px 10px 10px;
+  /* margin: 0px 0px 0px 0px; */
   padding: 14px 14px 0px 14px;
   box-shadow: 1px 2px 2px 2px rgb(202, 199, 199);
   border-radius: 6px;
@@ -115,16 +145,16 @@ body {
 .page1 {
   border: 0px solid rgb(26, 55, 75);
   width: 360px;
-  height: 423px;
-  margin: 14px 30px 14px 30px;
-  padding: 14px 14px 14px 14px;
+  height: 387px;
+  margin: 14px 5px 14px 30px;
+  padding: 14px 14px 15px 14px;
   box-shadow: 1px 2px 2px 2px rgb(202, 199, 199);
   border-radius: 6px;
 }
 .page2 {
   border: 0px solid rgb(26, 55, 75);
-  width: 360px;
-  height: 423px;
+  width: 330px;
+  height: 387px;
   margin: 14px 14px 14px 14px;
   padding: 14px 14px 14px 14px;
   box-shadow: 1px 2px 2px 2px rgb(202, 199, 199);
@@ -132,18 +162,18 @@ body {
 }
 #fontheadforpage1 {
   display: grid;
-  grid-gap: 60px;
-  grid-template-columns: 120px 120px;
+  grid-gap: 45px;
+  grid-template-columns: 126px 156px;
   margin-top: 50px;
-  margin-left: 20px;
+  margin-left: 12px;
 }
 #fontheadforpage2 {
   display: grid;
-  grid-gap: 80px;
-  grid-template-columns: 110px 110px;
-  grid-template-rows: 100px 100px;
+  grid-gap: 57px;
+  grid-template-columns: 148px 132px;
+  grid-template-rows: 94px 100px;
   margin-top: 50px;
-  margin-left: 25px;
+  margin-left: -11px;
 }
 .seetimes {
   background-color: rgb(230, 241, 252);
@@ -194,7 +224,7 @@ body {
 /* membership div */
 #membership {
   display: flex;
-  width: 97%;
+  width: 81%;
   height: 40px;
   margin: auto;
   align-items: center;
@@ -224,9 +254,11 @@ a {
 #membership > h3:hover {
   text-decoration: underline 1px;
 }
+/* rollbacks */
 #rollbacks {
-  width: 97%;
+  width: 81%;
   margin: auto;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 #rollbacks > h2 {
@@ -257,6 +289,7 @@ a {
   text-overflow: ellipsis;
   font-size: 15px;
   line-height: 15px;
+  
 }
 #text > #price {
   margin-top: -170px;
@@ -294,7 +327,7 @@ a {
 }
 /* get gifting */
 #gifting {
-  width: 97%;
+  width: 81%;
   margin: auto;
 }
 #gifting > h3 {
@@ -326,7 +359,7 @@ a {
 
 /* for you */
 #forYou {
-  width: 97%;
+  width: 81%;
   margin: auto;
 }
 #forYou > h2 {
@@ -380,7 +413,7 @@ button:hover {
 
 /* YOUR FAV DEPARTMENT */
 #department {
-  width: 97%;
+  width: 81%;
   margin: auto;
 }
 #department > h3 {
@@ -431,8 +464,9 @@ button:hover {
 
 /* cart  */
 #yourCart {
-  width: 97%;
+  width: 81%;
   margin: auto;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 #yourCart > h2 {
@@ -479,7 +513,7 @@ button:hover {
   font-weight: 100;
 }
 #box > #deliveryInfo {
-  margin-top: 85px;
+  margin-top: 100px;
   display: flex;
 }
 #box #pickupBtns,
@@ -495,7 +529,7 @@ button:hover {
   margin-left: 20px;
 }
 #sharing-card {
-  width: 97%;
+  width: 81%;
   margin: auto;
 }
 #sharing-card > h2 {
