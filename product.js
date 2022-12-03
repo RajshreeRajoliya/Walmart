@@ -1,30 +1,47 @@
 /** @format */
-import { navbar } from './nav.js';
-import { product } from './data.js';
+import { navbar, hjjk } from './nav.js';
+// import { product } from './data.js';
 import { fetchdata } from './compoents/fetch.js';
 // import { get, gte } from 'lodash';
 
 document.querySelector('.nav').innerHTML = navbar();
-
+hjjk();
 // let username = JSON.stringify(localStorage.getItem('user'));
-let username = 'wacxwac';
-let sda = document.querySelector('#us');
-sda.innerHTML = '';
-sda.append('Hi,', username);
+// let username = 'wacxwac';
+// let sda = document.querySelector('#us');
+// sda.innerHTML = '';
+// sda.append('Hi,', username);
 
 // display(product);
-let url = `http://localhost:3000/porducts`;
+// document.querySelector('.se').addEventListener('click', kill);
 
-let getdata = (url) => {
-  fetchdata(url)
+let urll = `http://localhost:3000/porducts`;
+
+let getdatadefault = (urll) => {
+  fetchdata(urll)
     .then(function (data) {
-      console.log(data.meals);
+      console.log(data);
       //   return data;
-      display(product);
+      let searched_data = JSON.parse(localStorage.getItem('search'));
+      if (searched_data != null) {
+        display(searched_data);
+        localStorage.removeItem('search');
+      } else {
+        display(data);
+      }
     })
     .catch(function () {});
 };
-getdata(url);
+getdatadefault(urll);
+let getdata = (url) => {
+  fetchdata(url)
+    .then(function (data) {
+      // console.log(data.meals);
+      //   return data;
+      display(data);
+    })
+    .catch(function () {});
+};
 
 let ARR = [];
 function display(data) {
@@ -37,6 +54,7 @@ function display(data) {
     div1.setAttribute('class', 'kol');
     let img = document.createElement('img');
     img.src = ele.Product_imgUrl;
+    console.log(ele.Product_imgUrl);
     img.addEventListener('click', detail_page);
     function detail_page() {
       localStorage.setItem('detail_me', JSON.stringify(ele));

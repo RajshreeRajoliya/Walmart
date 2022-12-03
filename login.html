@@ -1,162 +1,171 @@
+<!-- @format -->
+
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login</title>
     <style>
-        body {
-    margin: 0%;
-    padding: 0%;
-    box-sizing: border-box;
-}
+      body {
+        margin: 0%;
+        padding: 0%;
+        box-sizing: border-box;
+      }
 
-#container {
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-    justify-content: center;
-    align-items: center;
-    margin-top: 25px;
-}
+      #container {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+          Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
+          sans-serif;
+        justify-content: center;
+        align-items: center;
+        margin-top: 25px;
+      }
 
-#child-1 {
-    width: 300px;
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    font-size: 9px;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 5px;
-}
+      #child-1 {
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        font-size: 9px;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 5px;
+      }
 
-#child-1>div:last-child>h1:last-child {
-    display: flex;
-    justify-content: center;
-    margin-top: -10px;
-    margin-bottom: 15px;
-}
+      #child-1 > div:last-child > h1:last-child {
+        display: flex;
+        justify-content: center;
+        margin-top: -10px;
+        margin-bottom: 15px;
+      }
 
-#child-1 img {
-    height: 30px;
-}
+      #child-1 img {
+        height: 30px;
+      }
 
-form {
-    display: grid;
-    width: 300px;
-    margin: auto;
-    gap: 10px;
-}
+      form {
+        display: grid;
+        width: 300px;
+        margin: auto;
+        gap: 10px;
+      }
 
-input {
-    padding: 15px;
-}
+      input {
+        padding: 15px;
+      }
 
-input[type="submit"] {
-    margin-top: 25px;
-    border-radius: 150px;
-    background-color: rgb(0, 113, 220);
-    color: white;
-    border: none;
-    font-weight: 700;
-    cursor: pointer;
-}
+      input[type='submit'] {
+        margin-top: 25px;
+        border-radius: 150px;
+        background-color: rgb(0, 113, 220);
+        color: white;
+        border: none;
+        font-weight: 700;
+        cursor: pointer;
+      }
 
-input[type="submit"]:hover,
-input[type="submit"]:focus-within {
-    background-color: #004281;
-}
+      input[type='submit']:hover,
+      input[type='submit']:focus-within {
+        background-color: #004281;
+      }
 
-
-
-#form2 {
-    display: flex;
-    width: 1200px;
-    margin-bottom: 20px;
-    align-items: center;
-    justify-content: space-around;
-    font-size: 13px;
-}
-
-
+      #form2 {
+        display: flex;
+        width: 1200px;
+        margin-bottom: 20px;
+        align-items: center;
+        justify-content: space-around;
+        font-size: 13px;
+      }
     </style>
-    <link rel="icon" href="https://www.walmart.com/favicon.ico" type="image/x-icon" />
+    <link
+      rel="icon"
+      href="https://www.walmart.com/favicon.ico"
+      type="image/x-icon" />
     <link rel="stylesheet" href="../styles/SigninEmail.css" />
-    
-</head>
+  </head>
 
-<body>
+  <body>
     <div id="navbar"></div>
     <div id="container">
-        <div id="child-1">
-            <div>
-                <a href="../index.html">
-                    <img src="https://i5.walmartimages.com/dfw/4ff9c6c9-991c/k2-_03d329be-5936-4ef6-ad29-95e392df014d.v1.png" alt="logo" /></a>
-            </div>
-            <div>
-                <h1>Enter your email to sign in or</h1>
-                <h1>create an account</h1>
-            </div>
+      <div id="child-1">
+        <div>
+          <a href="../index.html">
+            <img
+              src="https://i5.walmartimages.com/dfw/4ff9c6c9-991c/k2-_03d329be-5936-4ef6-ad29-95e392df014d.v1.png"
+              alt="logo"
+          /></a>
         </div>
-        <div id="child-2">
-            <form id="login_form">
-                <input id="login_email" type="email" placeholder="Email address" required />
-                <input id="login_password" type="password" placeholder="Enter password" required />
-                <input type="submit" value="Continue"  onclick="signUp()"/>
-            </form>
+        <div>
+          <h1>Enter your email to sign in or</h1>
+          <h1>create an account</h1>
         </div>
+      </div>
+      <div id="child-2">
+        <form id="login_form">
+          <input
+            id="login_email"
+            type="email"
+            placeholder="Email address"
+            required />
+          <input
+            id="login_password"
+            type="password"
+            placeholder="Enter password"
+            required />
+          <input type="submit" value="Continue" onclick="signUp()" />
+        </form>
+      </div>
     </div>
-    
-    
-   
-</body>
-<script >
-  
-  let login_form = document.getElementById("login_form");
+  </body>
+  <script>
+    let login_form = document.getElementById('login_form');
 
-login_form.addEventListener("submit", (e) => {
-  e.preventDefault();
+    login_form.addEventListener('submit', (e) => {
+      e.preventDefault();
 
-  let login_email = document.getElementById("login_email").value;
-  let login_password = document.getElementById("login_password").value;
+      let login_email = document.getElementById('login_email').value;
+      let login_password = document.getElementById('login_password').value;
 
-  let form_data = JSON.parse(localStorage.getItem("signup_form_data")) || [];
+      let form_data =
+        JSON.parse(localStorage.getItem('signup_form_data')) || [];
 
-  let exists =
-    form_data.length &&
-    JSON.parse(localStorage.getItem("signup_form_data")).some(
-      (data) =>
-        data.signup_form_email === login_email &&
-        data.signup_form_password == login_password
-    );
+      let exists =
+        form_data.length &&
+        JSON.parse(localStorage.getItem('signup_form_data')).some(
+          (data) =>
+            data.signup_form_email === login_email &&
+            data.signup_form_password == login_password
+        );
 
-  if (exists) {
-    alert("login successfull");
+      if (exists) {
+        alert('login successfull');
 
-    let user = JSON.parse(localStorage.getItem("signup_form_data")).filter(
-      (user_data) => {
-        if (user_data.signup_form_email === login_email) {
-          return user_data;
-        }
+        let user = JSON.parse(localStorage.getItem('signup_form_data')).filter(
+          (user_data) => {
+            if (user_data.signup_form_email === login_email) {
+              return user_data;
+            }
+          }
+        );
+
+        localStorage.setItem('user_data', JSON.stringify(user));
+        // window.location.href = "email.html";
+        window.location.href = 'index.html';
+      } else {
+        alert('please check the credentials');
       }
-    );
+    });
 
-    localStorage.setItem("user_data", JSON.stringify(user));
-    window.location.href = "email.html";
-  } else {
-    alert("please check the credentials");
-  }
-});
-
-let create_account = document
-  .getElementById("create_account")
-  .addEventListener("click", () => {
-    window.location.href = "index.html";
-  });
-</script>
-
+    let create_account = document
+      .getElementById('create_account')
+      .addEventListener('click', () => {
+        window.location.href = 'index.html';
+      });
+  </script>
 </html>

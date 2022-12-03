@@ -24,6 +24,7 @@ function navbar() {
     </div>
     <div id="e">
       <input
+      id="asddd"
         type="text"
         placeholder="Search everything in Walmart online and in store" />
       <div class="se">
@@ -36,7 +37,7 @@ function navbar() {
         <p class="yui" id="bold">My Items</p>
       </div>
       <div id="iop" class="C">
-        <a href="create.html">
+        <a href="signup.html">
           <div id="us">sign In</div>
           <p class="yui" id="bold">Account</p></a
         >
@@ -73,4 +74,13 @@ function navbar() {
   </div>
 </div>`;
 }
-export { navbar };
+let user = JSON.parse(localStorage.getItem('user_data')) || [];
+function hjjk() {
+  console.log('dssd');
+  let username = ' ' + user[0].signup_form_fname;
+  let sda = document.querySelector('#us');
+  sda.innerHTML = '';
+  sda.append('Hi,', username);
+}
+
+export { navbar, hjjk };

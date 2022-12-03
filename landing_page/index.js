@@ -114,7 +114,7 @@ function rollback(rollbackItems) {
 
     var price = document.createElement('h2');
     price.setAttribute('id', 'price');
-    price.textContent = '$'+item.price;
+    price.textContent = '$' + item.price;
 
     var type = document.createElement('p');
     type.setAttribute('id', 'type');
@@ -295,22 +295,12 @@ function displayItems(cartItems) {
   });
 }
 import { fetchdata } from '../compoents/fetch.js';
-import { navbar } from '../nav.js';
+import { navbar, hjjk } from '../nav.js';
 document.querySelector('#navbar-container').innerHTML = navbar();
 let url = `http://localhost:3000/cartItems`;
 
-let getdata = (url) => {
-  fetchdata(url)
-    .then(function (data) {
-      console.log(data);
-      //   return data;
-      console.log(data);
-      displayItems(data);
-      // rollback();
-    })
-    .catch(function () {});
-};
-getdata(url);
+hjjk();
+
 let urll = `http://localhost:3000/rollbackItems`;
 
 let getdataroll = (urll) => {
@@ -324,3 +314,32 @@ let getdataroll = (urll) => {
     .catch(function () {});
 };
 getdataroll(urll);
+
+document.querySelector('.se').addEventListener('click', kill);
+function kill() {
+  // console.log('sdc');
+  // window.location.href = 'product.html';
+  let se = document.getElementById('asddd');
+  // console.log(se.value);
+
+  let url = `http://localhost:3000/porducts?q=${se.value}`;
+  console.log(url);
+  // window.location.href = 'product.html';
+  // let getdata = (url) => {
+  fetchdata(url)
+    .then(function (data) {
+      console.log(data);
+      //   return data;
+      if (data.length != 0) {
+        localStorage.setItem('search', JSON.stringify(data));
+        window.location.href = 'product.html';
+      } else {
+        console.log('no such product');
+      }
+      // displayItems(data);
+      // rollback();
+    })
+    .catch(function () {});
+  // };
+  // getdata(url);
+}
