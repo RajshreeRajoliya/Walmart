@@ -2,6 +2,11 @@
 body {
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
 }
+#navbar-container{
+  width: 100%;
+  margin: auto;
+  color: white;
+}
 #maindiv {
   color: black;
   /* margin: 270px; */
