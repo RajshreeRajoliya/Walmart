@@ -6,7 +6,9 @@ function navbar() {
     <div class="E">
       <div id="iop" class="C" style="display: flex">
         <div>
-        <img  class = "logo" src="logo-removebg-preview.png" alt="logo">
+        <a href="index.html">
+        <img class="logo" src="logo-removebg-preview.png" alt="logo"/>
+    </a>
         </div>
       </div>
       <!-- <div><span class="material-symbols-outlined"> window </span></div> -->

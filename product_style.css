@@ -196,6 +196,9 @@ button {
 .pp {
   color: white;
 }
+#footer-container {
+  margin-top: 110px;
+}
 @media all and (max-width: 1024px) and (min-width: 768px) {
   #body {
     display: grid;

@@ -3,8 +3,8 @@ import { fetchdata } from '../compoents/fetch.js';
 import { navbar, hjjk } from '../nav.js';
 import { footer } from '../footer.js';
 
-document.querySelector('#navbar-container').innerHTML = navbar();
 document.querySelector('#footer-container').innerHTML = footer();
+document.querySelector('#navbar-container').innerHTML = navbar();
 
 setInterval(function () {
   if (

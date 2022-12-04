@@ -3,7 +3,9 @@ import { navbar, hjjk } from './nav.js';
 // import { product } from './data.js';
 import { fetchdata } from './compoents/fetch.js';
 // import { get, gte } from 'lodash';
+import { footer } from './footer.js';
 
+document.querySelector('#footer-container').innerHTML = footer();
 document.querySelector('.nav').innerHTML = navbar();
 hjjk();
 // let username = JSON.stringify(localStorage.getItem('user'));
@@ -58,7 +60,7 @@ function display(data) {
     img.addEventListener('click', detail_page);
     function detail_page() {
       localStorage.setItem('detail_me', JSON.stringify(ele));
-      // window.location.href="";
+      window.location.href = 'productDetail.html';
     }
     div1.append(img);
     let pp = document.createElement('p');
