@@ -38,7 +38,7 @@
    /* height: 700px; */
     width: 80%;
     margin-top: 3%;
-   /* margin-left: 10%; */
+   padding: 0 0 10px 0;
     border-radius: 10px;
     margin-bottom: 2%;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -212,7 +212,7 @@ margin: auto;
    
 }
 #btndiv{
-    margin-top: 30px;
+    margin-top: -30px;
    margin-left: 40px;
 }
 #buttonContinue{
@@ -249,6 +249,24 @@ margin: auto;
     margin-left: 30px;
     margin-top: 10px;
 }
+
+
+#summaryoftotal{
+    margin: 20px 0;
+}
+#summaryoftotal > h3{
+    display: flex;
+    justify-content: space-between;
+}
+#s{
+    color: green;
+}
+#saving23{
+    background-color: #eaf3e6;
+    color: #2a8703;
+    padding:5px;
+}
+
 #learnHow{
     align-items: flex-end;
     margin: 80%;
@@ -295,7 +313,7 @@ display: flex;
 #mainContainer{
     /* border: 5px solid red; */
  display: flex;
- gap: 1%;
+ gap: 40px;
  padding: 1%;
  margin: auto;
  padding:1% 7%;
@@ -312,10 +330,33 @@ display: flex;
 }
 #payment{
     width: 100%;
+    padding: 0 0 10px 0;
 }
 #contact{
     width: 100%;
+    padding: 0 0 10px 0;
 }
 #subtotal{
     margin-top: 1.8%;
 }
+
+@media screen and (max-width: 780px) {
+    #mainContainer{
+        flex-direction: column;
+    }
+    #container,#subtotal{
+        width: 95%;
+        margin: auto;
+    }
+    #cartBox{
+        margin-bottom: 20px;
+    }
+
+    #payment{
+        height: auto;
+    }
+    #contact{
+        height: auto;
+    }
+
+      }

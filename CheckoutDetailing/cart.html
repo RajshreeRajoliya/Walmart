@@ -5,42 +5,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cart Page</title>
+  
     <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" href="../style_nav.css">
+    
+    
+    <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,1,200" />
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,100,0,0" />
+   
 </head>
 <body>
 
    <div id="navbar">
       <!-- //navBar -->
    </div>
-
-<div id="checkOUt">
+   <h1 style="margin:3rem">Cart(<span id="totalIteminCart"></span> items)</h1>
+<div id="checkOUt"  style="margin: 2%;">
 <div id="subTotal_cart">
-   <h1>Cart(<span id="totalIteminCart"></span>)</h1>
+   
+   
  <div id="cartBox">
   <!-- //products Dispkay -->
    <div id="cartDetails">
-      <div id="displayItem">
-         <div id="upperhead"> 
-          <img id="truck"
-           src="https://i5.walmartimages.com/dfw/63fd9f59-1b5e/5452ae02-a31f-4ef1-9a45-62ac0b06c13b/v1/mci-shipping.svg" alt="">
-           <h3 id="freeShip"> Free shipping, arrivesFri, Dec 16 </h3>
-           <br>
-          
-          <h3 id="goldenGate">Golden Gate Bridge</h3>
+      <div id="upperhead"> 
+         <img id="truck"
+          src="https://i5.walmartimages.com/dfw/63fd9f59-1b5e/5452ae02-a31f-4ef1-9a45-62ac0b06c13b/v1/mci-shipping.svg" alt="">
+          <h3 id="freeShip"> Free pickup today, after 11am</h3>
+          <br>
          
-         </div>
-         <p>Sold and shipped by Pompeii3</p>
-
-         <button class="btn1">Cyber Deal</button>
-         <button class="btn2">Best seller</button>
-      
-         
-          
+         <h3 id="goldenGate">West Brownsville Supercenter - We'll hold your order for 4 days.</h3>
+         <hr>
+         <p id="want">Want to skip a trip to the store?</p>
+        
         </div>
+      <div id="displayItem">
+      </div>
 <!-- /////Displaying here/ -->
 
    </div>
-   <div>
+   <div id="detail">
       <p id="promotion">
          <i class="fa-solid fa-star-of-life"></i>
          Add Walmart Protection Plan by Allstate
@@ -48,7 +55,7 @@
         <a href=""> Details</a>
          <br>
          <br>
-         <input type="checkbox" name="" id="">
+         <input type="checkbox" name="" id="check">
          2-Year plan - $14.00
          </p>
      
@@ -74,11 +81,11 @@
           <h3> Subtotal <span id="totalIteminCart1"></span></h3>
          <h3 >Savings <span id="saving23"></span></h3>
     
-      <h3>Shipping</h3>
+      <h3>Shipping  <span id="s">Free</span> </h3>
   
-      <h3>Taxes</h3>
+      <h3>Taxes <span>Calculated at checkout</span>  </h3>
   
-      <h4>Estimated total<span id="EstimatedTotal12"></span></h4>
+      <h3>Estimated total<span id="EstimatedTotal12"></span></h3>
       <h4 id="affirm" href=""><span>$32/mo with&nbsp;</span><img style="width: 37px; height: 18px;" src="https://cdn-assets.affirm.com/images/black_logo-white_bg.jpg" alt="" srcset=""></h4>
       <a id="learnHow" href="">Learnhow</a>
       
@@ -101,4 +108,4 @@
 </body>
 </html>
 <script src="https://kit.fontawesome.com/2a00a14c7f.js" crossorigin="anonymous"></script>
-<script src="./checkout.js"></script>
+<script type="module" src="./checkout.js"></script>
