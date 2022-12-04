@@ -1,0 +1,294 @@
+#MainDetails{
+    width:100%;
+    height:auto;
+    display:flex;
+    flex-direction: row;
+    /* border:1px solid black; */
+    
+}
+#div1{
+    margin-top: 5%;
+    display:flex;
+    flex-direction: column;
+    /* border:1px solid red; */
+    width:6%;
+    height:auto;
+    gap:10px;
+    margin-left: 6%;
+}
+#div2{
+    display:flex;
+    /* border:2px solid blue; */
+    width:40%;
+    margin-left: 8%;
+    margin-top: 3%;
+    height:600px;
+    /* border: 1px solid red; */
+    overflow: hidden;
+}
+#div3{
+    /* border:1px solid green; */
+    width:25%;
+    height:auto;
+    margin-left: 3%;
+    margin-top:3%;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+#rollback{
+    display:flex;
+    flex-direction: column;
+
+}
+
+#btn1,#btn2{
+    padding:2px;
+    margin:auto;
+    margin-top:2%;
+    margin-left:2%;
+    font-size: 13px;
+    
+   
+ }
+ #btn1{
+     border:1px solid rgb(212, 18, 18);
+     color: rgb(212, 18, 18);
+ }
+ #btn2{
+     margin-right:50%;
+     border:1px solid rgb(25, 159, 221);
+     color:rgb(25, 159, 221);
+ }
+ #hrtImg{
+    width:7%;
+   padding:3px;
+}
+#coca{
+    margin-top:8%;
+}
+#price{
+    margin-top: -4%;
+}
+
+
+h3,h1,p{
+margin-left: 3%;
+}
+h3{
+    margin-top:-2%;
+}
+h1{
+    color:green;
+}
+
+#bt3{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    padding:12px;
+    margin-left: 3%;
+    border-radius: 19px;
+    width:34%;
+    background-color:#0071dc;
+    color:white;
+    border:none;
+    height: 40px;
+
+}
+#bt3 > button , #bt3 > div{
+    margin-left: 12px;
+    width: 20px;
+    color: white;
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+#carDiv,#locDiv,#storeDiv,#giftDiv{
+    
+    display: flex;
+    flex-direction: row;
+}
+#carImg,#locImg,#deliImg{
+    width:30px;
+    margin-left: 5px;
+}
+
+#parentDiv{
+    width:100%;
+    margin-top:-4%;
+    height:auto;
+   
+    
+}
+#locDiv,#storeDiv{
+    margin-top:-4%;
+}
+#giftImg,#giftImg1{
+    width:20px;
+    height: 30px;
+    padding: 4px;
+    margin-left: 5px;
+}
+/* #giftImg1{
+    margin-left:1%;
+} */
+#giftTag,#giftTag1{
+    margin-left: 2%;
+    margin-top: 7px;
+}
+
+#ebit{
+    width:10%;
+    background-color:#2d4a93;
+    height:20px;
+    border-radius: 2px;
+    color:white;
+    border:none;
+    margin-top: 4%;
+    /* padding:5px; */
+}
+#ebtDiv{
+    padding:5px;
+    display:flex;
+    flex-direction: row;
+}
+
+#specificationBox{
+    /* border:1px solid black; */
+    width:100%;
+    height:auto;
+    display:flex;
+    flex-direction: row;
+}
+#specification{
+    width:60%;
+    height:auto;
+    /* border:1px solid red; */
+    margin-top: 1%;
+    /* padding:px; */
+}
+.nTag{
+    margin-top:0%;
+}
+#Box{
+    width:25%;
+    height:240px;
+    /* border:1px solid green; */
+    margin-left: 3%;
+    margin-top: 1%;
+    border-radius:7px ;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+#product{
+    display:flex;
+    flex-direction: row;
+}
+#roll{
+    width:18%;
+    height: 25px;
+    margin-top: 3%;
+    margin-left: 2%;
+    padding: 2px;
+}
+#productBox{
+    display:flex;
+    flex-direction: row;
+    
+}
+#productImg{
+    width:40%;
+}
+#crtBtn{
+    margin-top:3%;
+    border-radius: 15px;
+    width:40%;
+    height:auto;
+    margin-left: 37%;
+    padding:7px;
+    background-color:#0071dc;
+    color:white;
+    border:none;
+}
+
+#cocImg{
+    width:100%;
+    height:auto;
+    margin:auto;
+}
+#div1 > img{
+    width: 100%;
+    cursor: pointer;
+}
+
+#cocImg:hover {
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.7);
+    cursor:move;
+    
+  }
+  .dropDown{
+    display: flex;
+    flex-direction: row;
+    width:90%;
+    height:40px; 
+  }
+  .dropImg{
+    width:15px;
+    height:15px;  
+    position: absolute;
+    right: 42%;
+  }
+  
+  .containt{
+    display: none; 
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+
+ 
+  #testdiv{
+    margin-left: 2%;
+    width: 70%;
+    padding-top: 2px;
+   
+
+}
+
+
+#refer{
+    margin-left: 0px;
+    font-size: 13px;
+    margin-top: -10px;
+}
+
+
+/* 
+
+
+#divs{
+    display:flex;
+    flex-direction:row;
+}
+
+
+h4{
+    margin-top: 1%;
+}
+#h3tag{
+    margin-top:-5%;
+}
+#h5tag{
+    margin-top:-6%;
+}
+
+#2ndDiv{
+    
+}
+
+
+ */
