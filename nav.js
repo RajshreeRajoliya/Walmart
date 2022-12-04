@@ -77,10 +77,12 @@ function navbar() {
 let user = JSON.parse(localStorage.getItem('user_data')) || [];
 function hjjk() {
   console.log('dssd');
-  let username = ' ' + user[0].signup_form_fname;
-  let sda = document.querySelector('#us');
-  sda.innerHTML = '';
-  sda.append('Hi,', username);
+  if (user.length != 0) {
+    let username = ' ' + user[0].signup_form_fname;
+    let sda = document.querySelector('#us');
+    sda.innerHTML = '';
+    sda.append('Hi,', username);
+  }
 }
 
 export { navbar, hjjk };
