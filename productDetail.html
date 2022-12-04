@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/productDetail.css">
+    <link rel="stylesheet" href="css/main.css">
+    <!-- <link rel="stylesheet" href="product_style.css" /> -->
+    <link rel="stylesheet" href="style_nav.css" />
+    <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,200,0,0" />
+</head>
+<body>
+    <!-- <div id="detailPage"></div>
+    <div id="Page2"></div> -->
+    <div class="nav" style="color: white;"></div>
+
+    <div id="MainDetails">
+        <div id="div1">
+            <img  id="image1" >
+            <img id="image2" >
+            <img  id="image3" >
+            <img id="image4" >
+            <img id="image5" src="https://i5.walmartimages.com/asr/c05ebd56-e4b1-4f43-b2d7-36f9c61ddf19.e9bc5ec3bc419b8a1f24a533499e3310.jpeg?odnHeight=160&odnWidth=160&odnBg=FFFFFF">
+        </div>
+
+        <div id="div2">
+            <div id="2ndDiv">
+                <img id="cocImg" src="https://i5.walmartimages.com/asr/3e59ef41-fe9e-461a-9c06-176b056db393.6399bcde10eebb9c62c9547e368be4d4.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF">
+            </div>
+        </div>
+
+        <div id="div3">
+            <div id="rollback">
+                <div>
+                <button id="btn1">Rollback</button>
+                <button id="btn2">Best Seller</button>
+                <img id="hrtImg"src="https://www.iconpacks.net/icons/2/free-heart-icon-3510-thumb.png">
+            </div>
+
+            <div>
+                <p id="coca">Coca-cola</p>
+                <h3 id="brandName">Coca-Cola Soda Soft Drink, 16.9 fl oz, 6 Pack</h3>
+                <p id="rating">reviews</p>
+                <h1 id="Price1">3.28</h1>
+                <p id="price">Price when purchased online</p>
+                <button id="bt3">Add to cart</button>
+                <hr>
+
+            </div>
+            </div>
+
+            <div id="parentDiv">
+                <div id="carDiv">
+                    <img id="carImg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-U0CMdMOjxJLklQEWNIShAZe3Karfz1Y-_kCq8J1J-2l_Bxxs5ol4TZMsp5BdOG9q-Ag&usqp=CAU">
+                    <p id="addTag">Pickup, tomorrow at Sacramento Supercenter</p>
+                </div>
+
+                <div  id="locDiv">
+                    <img  id="locImg" src="https://media.istockphoto.com/id/1193451471/vector/map-pin-vector-glyph-icon.jpg?s=612x612&w=0&k=20&c=wuWVeHuthNAXzjOO5_VY9SUOd-6cxwpVH8VVfh6Y7Lc=">
+                    <p id="locTag">Aisle A22</p>
+                </div>
+
+                <div id="storeDiv">
+                    <img id="deliImg"src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAhFBMVEX///8zMzP5+fkrKyskJCTW1tYvLy8aGhrZ2dkcHBwfHx8nJyf09PTf398qKiolJSWEhITo6OjDw8MVFRXMzMySkpJhYWE3Nzfs7OxRUVGenp6tra3CwsJZWVlAQEBxcXGWlpZFRUWHh4e3t7d8fHxnZ2ekpKRwcHAPDw9dXV1KSkqysrLQKU5XAAAF9ElEQVR4nO2d6VLjOhBG8SbHcpx9h4QECJMJ7/9+F9ztwFyWSEFfJFf1+TFVZIyqG0u927m5EQRBEARBEARBEARBEARBEARBEARBEARBEARBEARBaC/DbDIajbKhbzkgxJPtUheaKI7TUexbIrd0BqooVXRClUX5NPEtlTtGs6KMPtEr1ne+JXNDNdPJZ/3qO6nXHd/SOWCVf6NfreNh6lu+39Kd6f/ppP79Wa/bbVmrTe/DwdP5eL7bzfOx/vBpMs98S/kLst7pjiU6GjxW9PHwbjB/P5sqb69R7aSNgkrvR//+32SfnnQs2qriImoU1OsvdMhmxelsVteXzgXrpNmGz19fcHvgP4HatTLCeUhZ/OhbU3IyROX9NSVzxCRnE7P5wR0slqziuIXhzYZ2oJr/6O+6zWWb7rUEc8Uze/ryjBEZ8nXp9ipiuSNmM5k/nrtyxBZVLa4hlztuycwk+/OXDijvSFd4qVyypOOlDYLOReP48VI5JKOtVxplDqs+RTaj85eGw5R2XmKUN3RpR/ee0FK55Fhv0sTQjw/IKSqsTE4ZjukUGrpxDg7SFiX8j+TklKkXJ7OU3kKFcsq2PoZqaXr9fdK2g7hPzC3pG2RN1V+kTG7Z1dsuPRvPNNzVu1od25NDkYPTxg6uQ6amRdE3mdLCuMQ0JA3n7QlNScPc2PovOMEIWsNu9k4n4l1KP31PxWTz+hd2pw+qKrQNO5nlefEOh9K6/iE/T/ML79eOx8sX30p9ZPtT5f5CVLEP5z6uivMCX0BpHDGgycYQBV8d6sC3asxRnRf2MvIwKsWwWxhMpEphc1T/qy4i+YRqmlMheMiYfJmanbvue7qfiDn/0sahLZCMZMkddwGplFU+uF31Il7qKovaOM4LqNJzdmdcg4dalMS1TRhRQhVCU+qpNgrm2a4hHS4pBxDX/KmNaPpNi/BiKrLQRQAaziifdx0ncyV8HMCkxlpBzHqXnJB5jgkjJrNuXrEwXZcaiwEMMXSp6mResTCF1jUtKgPpbsgiOI+Rl5jzbQ9bhNS5hn8VxEbbs6AYuedcQ/JCff99U+7DK+dWnSOJret1rYGVOika7PlP86lcDRgWWVG863+UaFKAImSadQggueAc4Oh8YcqBzTt0MFiQtfOF6U8XzZ0vbAtvJvetvwlp2HO+sC3PpKHBZJAlPLAydr6wLWzy/jhfuCI3dPCe5FM9BVDYXJCGY+/1RHbM7mtiMTchvZe9QWWaVw4RJi2z5R4WIFMpSntPgfeU5ACGfaiM4T8FBpVpbpqWlv+6/hFTprk5pcDeR8GoYIQ4LXTC/SeICmYPaCbTf2+GoscUYNO3qFjCjvgAKkQ1Ea/JLDyULkUeJaD4zlmL+7zMDp4GLgHR4yMqt7aDM4AeIAPgkUzfKTBncQlgaaoAeU/yORNHjNnz0GnkuYMI3Ep8xH0/DwU0B2ym3fcL7ACa9JjSp77nHuktqhB1esBPe06BgbX3eAcL6m1A9k+WQXSBcWUa2JSHJcg+JpeAPHeBZ8BEfADcH+Yg5wnC6JHugOWiLWYm0BJkyY+eaPOdAtMkBmZyKYwucB9Yeoc1X22ISUNM+2QSwlOJC4qOMTOSGWrMw4YhawgRouIk32uCWJGGB8jiQzoCZq8tQMGPImjI4gt+iN2rhsAyzauGc6AZM4XN3QayOGw41wbYRNQbqAFrK7BOGdd9NQdYprlBdtDNwY5IhjAmPIWmcMgSiSnYNPwhgC7wE7TXHkIXGHtSuAvsfirQghn0oYgX1OyqBWtoSXMUwCD0EuqTm5jQZwqMLbxnwWho/rokO0K4h7avvLLjue+/FMXPlIOmCciO+S163/HQ17STOafDb4zUXiPvmF/w1EsB8PcpIOatLBh88bUObul5frZrgXm90Ae076e5b3OsgsXWs4Kv+xR6F7Xv4cs3VvrjN8i4RJU6jC/4qKbL6PNrgn5PdHzwfQbf+eEFQr/At1aCIAiCIAiCIAiCIAiCIAiCIAiCIAiCIAiCIAiCIAiCIAiCIAiCECD/AbIKUAbvKc+3AAAAAElFTkSuQmCC">
+                    <p id="deliTag">Delievery from store check eligibility</p>
+                    
+                </div>
+            </div>
+            <hr>
+
+            <div id="giftDiv">
+                <img id="giftImg"src="https://www.iconpacks.net/icons/2/free-heart-icon-3510-thumb.png">
+                <p id="giftTag"><u>Add to list</u></p>
+                <img id="giftImg1"src="https://static.vecteezy.com/system/resources/previews/002/205/948/original/gift-box-icon-free-vector.jpg">
+                <p id="giftTag1"><u>Add to registery</u></p>
+                
+            </div>
+            <hr>
+
+            <div id="ebtDiv">
+                
+                <button id="ebit">Ebit</button>
+                <p>EBT eligibile</p>
+                <p></p>
+            </div>
+        </div>
+    </div>
+
+    <div id="specificationBox">
+        <div id="specification">
+            <h2>About this item</h2>
+            <hr>
+            <div>
+                <div class="dropDown">
+                    <h4 class="nTag">Nutrition information</h4>
+                    <img id="dr1" class="dropImg"src="https://cdn-icons-png.flaticon.com/128/130/130907.png" >
+                </div>
+                <div id="cn1" class="containt">
+                    <div id="testdiv">
+                        <h2>Nutrition facts</h2>
+                        <p id="refer">Refer to the product label for full dietary information, which may be available as an alternative product image.</p>
+                    </div>
+                    <hr style="width: 96%; height: 2px; background-color: black;">
+                    <div id="testdiv">
+                        <h5>1 servings per container</h5>
+                        <h4 id="refer">Serving Size</h4>
+                    </div>
+                    <hr style="width: 96%; height: 10px; background-color: black;">
+                    <div id="testdiv">
+                        <h5>Amount per serving
+                        </h5>
+                        <h4 style="font-size:20px ;" id="refer">Calories</h4>
+                    </div>
+                    <hr style="width: 96%; height: 5px; background-color: black;">
+                </div>
+            </div>
+            
+           
+          
+            <hr>
+            <div>
+                <div class="dropDown">
+                    <h4 class="nTag">Product details</h4>
+                    <img id="dr2" class="dropImg"src="https://cdn-icons-png.flaticon.com/128/130/130907.png" >
+                </div>
+                <div id="cn2" class="containt">
+                    <h5>
+                        Get the boost you need to make it through your day with this Monster Energy Drink. It features a smooth, delightful flavor. This wicked mega hit delivers twice the buzz of a regular energy drink. It offers the ideal combo of the right ingredients in the right proportion for a vicious punch. Made with L-carnitine, taurine and B vitamins, this 16 oz drink is just what you need for a refreshing pick-me-up. Monster Original Green, 16 Fl Oz.
+                        UNLEASH THE BEAST: Tear into a can of the meanest energy drink on the planet, Monster Energy. Athletes, musicians, anarchists, co-ed’s, road warriors, metalheads, geeks, hipsters, and bikers dig it- you will too SMOOTH & EASY FLAVOR: Monster packs a powerful punch, but has a smooth easy drinking flavor. What does it taste like? It tastes like Monster BIG BAD BUZZ: With 160mg of Caffeine in a “Monster” 16 ounce can, Monster Energy offers more for less when compared with other 8.3 ounce energy drinks. Monster Original Green, 16 Fl Oz Can.
+                    </h5>
+                    <br>
+                    <p style="margin-left:0px; margin-top: 0px;">
+                        error:
+                        We aim to show you accurate product information. Manufacturers, suppliers and others provide what you see here, and we have not verified it.  See our disclaimer  
+                    </div>
+                    </p>
+                    
+            </div>
+            
+            <hr>
+   <div>
+    <div class="dropDown"> 
+        <h4 class="nTag">Specifications</h4>
+        <img  class="dropImg"src="https://cdn-icons-png.flaticon.com/128/130/130907.png" >  
+    </div>
+    <div class="containt">
+                       
+    </div>
+   </div>
+           
+            <hr>
+            <div class="dropDown"> 
+                <h4 class="nTag">Directions</h4>
+                <img class="dropImg"src="https://cdn-icons-png.flaticon.com/128/130/130907.png" >  
+            </div>
+            <hr>
+            <div class="dropDown"> 
+                <h4 class="nTag">Ingredients</h4>
+                <img class="dropImg"src="https://cdn-icons-png.flaticon.com/128/130/130907.png" >  
+            </div>
+           
+
+            
+
+        </div>
+        <div id="Box">
+            <div id="product">
+                <button id="roll">Rollback</button>
+                <p>sponsered</p>
+            </div>
+
+            <div id="productBox">
+                <img id="productImg" src="https://i5.walmartimages.com/asr/be34d31b-246f-42ef-80a3-673c9f8a1734.ee039280c5c203b294bc07f360d41fbb.jpeg?odnHeight=160&odnWidth=160&odnBg=FFFFFF">
+                <div id="pTag">
+                    <p>Now $3.28</p>
+                    <p>Coca-Cola Soda Soft Drink, 16.9 fl oz, 6 Pack</p>
+                    <div>
+                        <button>Pickup</button>
+                        <button>Delivery</button>
+                    </div>
+                    
+                </div>
+            </div>
+            <button id="crtBtn">Add to cart</button>
+
+        </div>
+
+    </div>
+    
+     <div class="footer"></div> 
+</body>
+</html>
+<script src="js/productDetail.js" type="module"></script>
