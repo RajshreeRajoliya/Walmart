@@ -1,7 +1,7 @@
 /** @format */
 
 #parentBo {
-  /* border:1px solid black; */
+  border: 1px solid black;
   width: 100%;
   /* margin-left: 8%; */
   /* height:150px; */
@@ -9,13 +9,16 @@
 }
 
 .footer {
-  /* border:2px solid blue; */
+  width: 100%;
+  gap: 15px;
+  /* border: solid blue; */
   display: flex;
-  flex-direction: row;
-  margin: auto;
-  justify-content: space-around;
+  /* flex-direction: row; */
+  /* margin: auto; */
+  align-content: center;
+  justify-content: center;
   height: 38px;
-  text-align: center;
+  /* text-align: center; */
   background-color: rgb(0, 130, 255);
   color: aliceblue;
   /* margin-right: 10%; */
@@ -23,27 +26,33 @@
   /* margin-right:10%; */
 }
 .ptag {
-  margin-left: 10%;
+  /* border: 2px solid blue; */
+  /* margin-left: 10%; */
   justify-content: space-around;
 }
 .p1tag {
-  margin-right: 10%;
+  /* border: 2px solid blue; */
+  /* margin-right: 10%; */
 }
 .tag {
-  margin-left: 35%;
+  /* border: 2px solid blue; */
+  /* margin-left: 35%; */
   /* margin-right: 10%; */
 }
 
 .tag1 {
+  /* border: 2px solid blue; */
   /* margin-left: 10%; */
-  margin-right: 45%;
+  /* margin-right: 45%; */
 }
 #h5tag {
+  /* border: 2px solid blue; */
   margin-top: 17px;
-  margin-right: 10%;
+  /* margin-right: 10%; */
 }
 #Box1 {
   /* border:solid; */
+  /* border: 2px solid blue; */
   height: 150px;
   text-align: center;
   background-color: #356391;
@@ -51,6 +60,7 @@
   /* margin-top: 5% */
 }
 #h4tag {
+  /* border: 2px solid blue; */
   padding-top: 30px;
 }
 /* .button{
@@ -64,3 +74,13 @@
     
     
 } */
+#change {
+  display: grid;
+  /* border: solid black; */
+  grid-template-columns: repeat(1, 1fr);
+
+  align-items: center;
+  /* align-content: center; */
+  /* justify-items: center; */
+  /* justify-content: center; */
+}
