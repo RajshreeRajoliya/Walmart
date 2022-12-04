@@ -18,18 +18,20 @@ hjjk();
 // document.querySelector('.se').addEventListener('click', kill);
 
 let urll = `http://localhost:3000/porducts`;
-
+let searched_data = [];
 let getdatadefault = (urll) => {
   fetchdata(urll)
     .then(function (data) {
       console.log(data);
       //   return data;
-      let searched_data = JSON.parse(localStorage.getItem('search'));
+      searched_data = JSON.parse(localStorage.getItem('search'));
       if (searched_data != null) {
         display(searched_data);
         localStorage.removeItem('search');
       } else {
-        display(data);
+        // searched_data = '';
+        searched_data = data;
+        display(searched_data);
       }
     })
     .catch(function () {});
@@ -179,7 +181,7 @@ let t = [];
 let brand = document.querySelector('#brand');
 brand.addEventListener('click', hjk);
 function hjk() {
-  console.log('s');
+  // console.log('s');
   let br = document.querySelector('.ol');
   br.innerHTML = '';
   let p1 = document.createElement('p');
@@ -229,11 +231,11 @@ function hjk() {
   });
   function f1(p) {
     console.log('k');
-    t = product.filter(function (ele) {
+    t = searched_data.filter(function (ele) {
       console.log(ele.Brand + '==' + p);
       return ele.Brand == p;
     });
-    console.log(t);
+    // console.log(t);
     display(t);
     br.setAttribute('style', '  display: none;');
     brand.setAttribute('style', '  background-color: black; color:white;');
@@ -280,7 +282,7 @@ function hjkk() {
     f1(20);
   });
   function f1(p) {
-    let ioo = product.filter(function (ele) {
+    let ioo = searched_data.filter(function (ele) {
       // console.log(ele.Rating + '==' + p);
       return ele.List_Price < p;
     });
@@ -323,8 +325,8 @@ function hjkkk() {
     f1('Anytime');
   });
   function f1(p) {
-    console.log(product);
-    t = product.filter(function (ele) {
+    // console.log(product);
+    t = searched_data.filter(function (ele) {
       console.log(ele.speed + '==' + p);
       return ele.speed == p;
     });
@@ -368,8 +370,8 @@ function hjkkkk() {
   });
   let ch = document.querySelector('#change');
   function f1(p) {
-    console.log(product);
-    let v = product.sort(function (a, b) {
+    // console.log(product);
+    let v = searched_data.sort(function (a, b) {
       return (
         parseFloat(Number(a.List_Price)) - parseFloat(Number(b.List_Price))
       );
@@ -381,19 +383,19 @@ function hjkkkk() {
     br.setAttribute('style', '  display: none;');
   }
   function f2(p) {
-    console.log(product);
-    product.sort(function (a, b) {
+    // console.log(product);
+    searched_data.sort(function (a, b) {
       return (
         parseFloat(Number(b.List_Price)) - parseFloat(Number(a.List_Price))
       );
     });
 
-    display(product);
+    display(searched_data);
     br.setAttribute('style', '  display: none;');
   }
   function f3(p) {
-    console.log(product);
-    let ioo = product.filter(function (ele) {
+    // console.log(product);
+    let ioo = searched_data.filter(function (ele) {
       console.log(ele.Rating + '==' + p);
       return ele.Rating > 3.5;
     });
@@ -404,8 +406,8 @@ function hjkkkk() {
     br.setAttribute('style', '  display: none;');
   }
   function f4(p) {
-    console.log(product);
-    let ioo = product.filter(function (ele) {
+    // console.log(product);
+    let ioo = searched_data.filter(function (ele) {
       console.log(ele.Rating + '==' + p);
       return ele.Rating == 3.5;
     });
@@ -421,7 +423,7 @@ function hjkkkk() {
 let em = document.querySelector('#empty');
 em.addEventListener('click', mu);
 function mu() {
-  display(product);
+  display(searched_data);
   Price.setAttribute('style', ' background-color: rgb(227, 228, 229);');
   Speed.setAttribute('style', ' background-color: rgb(227, 228, 229);');
   brand.setAttribute('style', ' background-color: rgb(227, 228, 229);');
