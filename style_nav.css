@@ -110,6 +110,7 @@ input {
 }
 .y:hover {
   text-decoration: underline;
+  cursor: pointer;
 }
 #bold {
   display: flex;
