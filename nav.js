@@ -40,7 +40,7 @@ function navbar() {
       </div>
       <div id="iop" class="C" class="opilp">
         <a href="signup.html">
-          <div id="us">sign In</div>
+          <div id="us">Sign In</div>
           <p class="yui" id="bold">Account</p></a
         >
       </div>
