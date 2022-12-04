@@ -116,15 +116,15 @@ function rollback(rollbackItems) {
     text.setAttribute("id", "text");
 
     var img = document.createElement("img");
-    img.setAttribute("src", item.img_url);
+    img.setAttribute("src", item.Product_imgUrl);
 
     var price = document.createElement("h2");
     price.setAttribute("id", "price");
-    price.textContent = "$" + item.price;
+    price.textContent = "$" + item.List_Price;
 
     var type = document.createElement("p");
     type.setAttribute("id", "type");
-    type.textContent = item.type;
+    type.textContent = item.Product_Name;
 
     var btn = document.createElement("button");
     btn.setAttribute("id", "shippingBtn");
@@ -212,7 +212,7 @@ function displayItems(cartItems) {
     box.setAttribute("id", "box");
 
     let img = document.createElement("img");
-    img.src = items.img_url;
+    img.src = items.Product_imgUrl;
     img.addEventListener("click", detail_page);
     function detail_page() {
       localStorage.setItem("detail_me", JSON.stringify(item));
@@ -229,10 +229,10 @@ function displayItems(cartItems) {
     });
 
     let price = document.createElement("h2");
-    price.textContent = "$" + items.price;
+    price.textContent = "$" + items.List_Price;
 
     let title = document.createElement("h4");
-    title.textContent = items.type;
+    title.textContent = items.Product_Name;
 
     let delivery = document.createElement("div");
     delivery.setAttribute("id", "deliveryInfo");

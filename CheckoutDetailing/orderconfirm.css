@@ -1,6 +1,43 @@
 #head{
 color: blue;
 }
+#main{
+    width: 60%;
+    height: 500px;
+    margin: auto;
+    margin-top: 5%;
+    text-align: center;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+button{
+    color: #fff;
+    border: none;
+    background-color: #0071dc;
+    width: 28%;
+    height: 60px;
+    font-size: 20px;
+    margin-top: 50px;
+    border-radius: 10px;
+    
+}
+
+/* #main div{
+    width: 8%;
+    height: 11.25%;
+    border-radius: 50%;
+    background-color:#008000;
+    color: white;
+    text-align: center;
+    margin: auto;
+    font-size: 50px;
+    padding-top: 15px;
+    padding-left: 3px;
+    margin-top: 70px;
+} */
 #thanks{
     height: 100px;
     width: 100%;
@@ -15,6 +52,7 @@ margin-top: 2%;
 font-size: 50px; 
 }
 #regards{
+    margin-top: px;
     margin-left: 15%;
 }
 
@@ -24,7 +62,7 @@ font-size: 50px;
     margin-left: 500px;
 
 }
-#btndiv{
+/* #btndiv{
     margin-top: 30px;
     margin-left: 40px;
 }
@@ -38,4 +76,4 @@ font-size: 50px;
     font-weight: bolder;
     margin-left: -8%;
     
-}
+} */
