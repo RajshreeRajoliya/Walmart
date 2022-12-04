@@ -105,8 +105,6 @@ function display(data) {
 
         add.append(pp);
         ele.count++;
-
-        // add.append('jkjko');
       }
     }
     function plu() {
