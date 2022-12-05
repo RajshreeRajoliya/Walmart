@@ -5,6 +5,7 @@
   /* border: 5px solid green; */
   /* margin: auto; */
   padding: 20px 0;
+  
   box-shadow: rgba(174, 6, 6, 0.15) 1.95px 1.95px 2.6px;
 }
 #name {
@@ -174,6 +175,7 @@ hr {
 }
 #checkOUt {
   display: block;
+  overflow: hidden;
 }
 #saveLater {
   width: 55rem;

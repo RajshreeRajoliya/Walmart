@@ -27,13 +27,18 @@
 }
 .A {
   height: 30px;
-
+  /* cursor: pointer; */
   display: flex;
   align-self: center;
   background-color: rgb(227, 228, 229);
   margin: 10px;
   padding: 0px 20px 0px 20px;
   border-radius: 20px;
+}
+.A,
+#empty,
+#ls,.kl,.kol:hover {
+  cursor: pointer;
 }
 #empty {
   align-self: center;
@@ -45,6 +50,7 @@
   /* border: solid black; */
   align-self: center;
 }
+
 select {
   background-color: rgb(241, 241, 242);
   border: none;
@@ -61,6 +67,7 @@ select {
   /* z-index: 9999; */
   position: relative;
   top: 145px;
+  /* cursor: pointer; */
 }
 .kl {
   padding-top: 10px;
