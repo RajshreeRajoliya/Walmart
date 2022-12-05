@@ -15,3 +15,5 @@ HTML , CSS , JavaScript and JSON
 - [Rajshree Rajoliya] (https://github.com/RajshreeRajoliya)
 - [Harshita Goswami] (https://github.com/harshita0802goswami)
 - [Bhasker Ganesh] (https://github.com/BGNM4160)
+
+## Deployed Link : https://walmartclone.netlify.app
