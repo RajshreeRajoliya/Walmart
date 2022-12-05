@@ -6,7 +6,7 @@ function navbar() {
     <div class="E">
       <div id="iop" class="C" style="display: flex">
         <div>
-        <a href="index.html">
+        <a href="../Walmart/index.html">
         <img class="logo" src="logo-removebg-preview.png" alt="logo"/>
     </a>
         </div>
