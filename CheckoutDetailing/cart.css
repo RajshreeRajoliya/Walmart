@@ -138,6 +138,9 @@ hr {
   padding: 5px;
   border-radius: 8px;
 }
+#navbar {
+  color: white;
+}
 
 #saving p {
   margin-top: -45px;
