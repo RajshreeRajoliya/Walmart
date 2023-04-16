@@ -31,4 +31,4 @@ HTML , CSS , JavaScript and Mock server
 
 <image src="./w4.png">
 
-## Deployed Link : https://walmartclone.netlify.app
+## Deployed Link : https://walmartcloneee.netlify.app/
